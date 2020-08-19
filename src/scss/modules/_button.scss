@@ -1,0 +1,19 @@
+.button {
+    position: relative;
+    display: inline-block;
+    max-width: 100%;
+    user-select: none;
+    vertical-align: middle;
+    text-align: center;
+    white-space: normal;
+    word-wrap: normal;
+    color: #fff;
+    cursor: pointer;
+    transition: all .2s ease-out;
+}
+
+.button__icon {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
