@@ -1,3 +1,187 @@
 .main-nav {
-    display: flex;
+    margin-top: 14px;
+
+    @include media-up(xl) {
+        display: block !important;
+    }
+
+    @include media-only(xl) {
+        position: absolute;
+        top: 14px;
+        margin-top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: top .5s ease-out;
+    }
+
+    @include media-down(lg) {
+        order: 1;
+        width: 100%;
+        display: none;
+        opacity: 0;
+        margin-top: 50px;
+        margin-left: 70px;
+        transition: opacity .5s ease-out;
+    }
+
+    @include media-down(sm) {
+        margin-left: 0;
+        margin-top: 40px;
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+
+        @include media-down(lg) {
+            flex-wrap: wrap;
+        }
+
+        @include media-down(xs) {
+            display: block;
+            columns: 2;
+        }
+
+        a {
+            font-size: 16px;
+            line-height: 19px;
+            white-space: nowrap;
+            transition: all .2s ease-out;
+    
+            &:hover,
+            &.active {
+                color: $color-main;
+            }
+
+            @include media-down(xs) {
+                font-size: 14px;
+                line-height: 17px;
+            }
+        }
+
+        & > li {
+            min-width: 0;
+            margin: 0 47px;
+            position: relative;
+            transition: all .5s ease-out;
+
+            @include media-down(xl) {
+                margin: 0 30px;
+            }
+
+            @include media-down(lg) {
+                width: calc(100% / 4);
+                margin: 0;
+                margin-bottom: 40px;
+                transition: none;
+            }
+
+            @include media-down(md) {
+                width: calc(100% / 3);
+            }
+
+            @include media-down(xs) {
+                width: calc(50% - 15px);
+                min-width: 0 !important;
+
+                &:nth-child(odd) {
+                    margin-right: 30px !important;
+                }
+            }
+
+            & > a {
+                font-weight: 900;
+                display: block;
+            }
+
+            &:hover,
+            &.current-menu-item {
+                a {
+                    opacity: 1;
+                }
+
+                & > a {
+                    color: $color-main;
+                }
+            }
+        }
+    }
+
+    &__sublist {
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        top: 0;
+        padding-top: 60px;
+        display: none;
+        opacity: 0;
+        transition: opacity .5s ease-out;
+
+        @include media-down(lg) {
+            display: block !important;
+            position: relative;
+            padding-top: 30px;
+        }
+
+        @include media-down(xs) {
+            padding-top: 15px;
+        }
+
+        li:not(:last-child) {
+            margin-bottom: 13px;
+
+            @include media-down(xs) {
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+.show-dropdown-nav {
+
+    .main-nav {
+        @include media-only(xl) {
+            top: 80px;
+        }
+
+        @include media-down(lg) {
+            opacity: 1;
+        }
+
+        &__list {
+            a {
+                opacity: 0.5;
+            }
+            
+            & > li {
+                min-width: 180px;
+                margin-left: 0;
+                margin-right: 30px;
+
+                @media (max-width: 1700px) {
+                    min-width: 165px;
+                }
+
+                @include media-down(xl) {
+                    margin-right: 30px;
+                }
+
+                @include media-down(lg) {
+                    margin-right: 0;
+
+                    & > a {
+                        opacity: 1;
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &__sublist {
+            opacity: 1;
+        }
+    }
 }

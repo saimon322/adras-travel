@@ -1,0 +1,62 @@
+*,
+::after,
+::before {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+html {
+	font-family: sans-serif;
+	-webkit-text-size-adjust: 100%;
+	-webkit-tap-highlight-color: transparent;
+	height: 100%;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+	display: block
+}
+
+main {
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+ul,
+ol {
+	list-style-type: none;
+	margin-bottom: 0;
+}
+
+a,
+a:focus,
+a:active,
+input,
+button,
+select,
+.slick-slide {
+	outline: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+}

@@ -1,8 +1,71 @@
 @font-face {
     font-display: swap;
     font-style: normal;
+    font-weight: 300;
+    font-family: "Roboto";
+    src: url("fonts/Roboto-light.woff2") format("woff2"),
+         url("fonts/Roboto-light.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
     font-weight: 400;
-    font-family: "Lato";
-    src: url("fonts/lato-regular.woff2") format("woff2"),
-         url("fonts/lato-regular.woff") format("woff");
+    font-family: "Roboto";
+    src: url("fonts/Roboto.woff2") format("woff2"),
+         url("fonts/Roboto.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    font-weight: 500;
+    font-family: "Roboto";
+    src: url("fonts/Roboto-medium.woff2") format("woff2"),
+         url("fonts/Roboto-medium.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+    font-family: "Roboto";
+    src: url("fonts/Roboto-bold.woff2") format("woff2"),
+         url("fonts/Roboto-bold.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    font-weight: 900;
+    font-family: "Roboto";
+    src: url("fonts/Roboto-black.woff2") format("woff2"),
+         url("fonts/Roboto-black.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    font-weight: 300;
+    font-family: "Oswald";
+    src: url("fonts/Oswald-light.woff2") format("woff2"),
+         url("fonts/Oswald-light.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Oswald";
+    src: url("fonts/Oswald.woff2") format("woff2"),
+         url("fonts/Oswald.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+    font-family: "Montserrat";
+    src: url("fonts/Montserrat-extrabold.woff2") format("woff2"),
+         url("fonts/Montserrat-extrabold.woff") format("woff");
 }

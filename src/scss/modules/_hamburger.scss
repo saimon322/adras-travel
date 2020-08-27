@@ -1,0 +1,91 @@
+:root {
+
+    --mb-button-size: 20px;
+    --mb-bar-width: 1;
+    --mb-bar-height: 2px;
+    --mb-bar-spacing: 5px;
+    --mb-animate-timeout: 0.1s;
+}
+
+.hamburger {
+    position: absolute;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    height: var(--mb-button-size);
+    width: var(--mb-button-size);
+    margin-top: 14px;
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    background: 0 0;
+    line-height: var(--mb-button-size);
+    vertical-align: middle;
+    appearance: none;
+    outline: 0;
+    cursor: pointer;
+    user-select: none;
+    display: none;
+
+    @include media-down(lg) {
+        display: block;
+        margin-top: 10px;
+    }
+
+    @include media-down(sm) {
+        margin-top: 8px;
+    }
+
+    &:hover {
+
+        b {
+            background-color: $color-main;
+        }
+    }
+}
+
+.hamburger b {
+    display: block;
+    position: absolute;
+    left: calc(var(--mb-button-size) * ((1 - var(--mb-bar-width)) / 2));
+    width: calc(var(--mb-button-size) * var(--mb-bar-width));
+    height: var(--mb-bar-height);
+    background-color: #fff;
+    color: inherit;
+    opacity: 1;
+
+    &:nth-of-type(1) {
+        bottom: calc(50% + var(--mb-bar-spacing));
+        transition: bottom .2s ease, transform .2s ease, width .2s ease;
+        transition-delay: .2s, 0s;
+
+        .show-dropdown-nav & {
+            bottom: calc(50% - (var(--mb-bar-height) / 2));
+            transform: rotate(135deg);
+            transition-delay: calc(var(--mb-animate-timeout) + 0s), calc(var(--mb-animate-timeout) + .2s);
+        }
+    }
+
+    &:nth-of-type(2) {
+        top: calc(50% - (var(--mb-bar-height) / 2));
+        transition: opacity .2s ease;
+        transition-duration: 0s;
+        transition-delay: .2s;
+
+        .show-dropdown-nav & {
+            opacity: 0;
+            transition-delay: calc(var(--mb-animate-timeout) + 0s);
+        }
+    }
+
+    &:nth-of-type(3) {
+        top: calc(50% + var(--mb-bar-spacing));
+        transition: top .2s ease, transform .2s ease, width .2s ease;
+        transition-delay: .2s, 0s;
+
+        .show-dropdown-nav & {
+            top: calc(50% - (var(--mb-bar-height) / 2));
+            transform: rotate(225deg);
+            transition-delay: calc(var(--mb-animate-timeout) + 0s), calc(var(--mb-animate-timeout) + .2s);
+        }
+    }
+}

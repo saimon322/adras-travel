@@ -1,3 +1,110 @@
 .main-header {
-    position: relative;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 48px 0;
+    transition: .5s ease-out;
+    transition-property: height, background-color;
+    height: 144px;
+    color: #fff;
+
+    @include media-down(lg) {
+        height: auto;
+    }
+
+    @include media-down(sm) {
+        padding: 35px 0;
+    }
+
+    a {
+        color: #fff;
+
+        &:hover {
+            color: $color-main;
+        }
+    }
+
+    &__container {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        
+        @include media-up(xl) {
+            max-width: 1760px;
+            padding: 0 30px;
+        }
+
+        @include media-down(lg) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__logo {
+        font-family: $font3;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 100%;
+        text-transform: uppercase;
+        position: relative;
+        transition: color .2s ease-out;
+
+        @include media-down(lg) {
+            font-size: 20px;
+            margin-left: 70px;
+        }
+
+        @include media-down(sm) {
+            margin-left: 50px;
+            font-size: 18px;
+        }
+
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0; top: -24px;
+            display: block;
+            width: 19px; 
+            height: 19px;
+            border-radius: 50%;
+            background: #fff;
+            transition: left .5s ease-out, background-color .2s ease-out;
+
+            @include media-down(lg) {
+                width: 15px;
+                height: 15px;
+                top: -20px;
+            }
+
+            @include media-down(sm) {
+                width: 13px;
+                height: 13px;
+                top: -16px;
+            }
+        }
+
+        &:hover:before {
+            left: 75%;
+            background-color: $color-main;
+        }
+    }   
+}
+
+.show-dropdown-nav {
+
+    .main-header {
+        height: 412px;
+        background: #000;
+
+        @include media-down(xl) {
+            height: 480px;
+        }
+
+        @include media-down(lg) {
+            height: auto;
+        }
+    }
 }

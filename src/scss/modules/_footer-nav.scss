@@ -1,0 +1,54 @@
+.footer-nav {
+    @include media-down(lg) {
+        width: 100%;
+        margin-top: 50px;
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include media-down(lg) {
+            justify-content: space-between;
+        }
+
+        li {
+            margin-bottom: 8px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        & > li {
+            max-width: 220px;
+            margin-bottom: 0;
+
+            @include media-down(lg) {
+                margin-bottom: 50px;
+            }
+
+            @include media-down(xs) {
+                width: calc(50% - 15px);
+                margin-bottom: 40px;
+            }
+
+            &:not(:last-child){
+                margin-right: 96px;
+
+                @include media-down(xl) {
+                    margin-right: 50px;
+                }
+
+                @include media-down(lg) {
+                    margin-right: 0;
+                }
+            }
+
+            & > a {
+                display: block;
+                font-weight: 900;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
