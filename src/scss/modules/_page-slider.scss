@@ -1,0 +1,71 @@
+.page-slider {
+    width: 100%;
+    overflow: hidden;
+
+    .swiper-button {
+        background: rgba(255, 255, 255, 0.3);
+        color: #fff;
+        backdrop-filter: blur(4px);
+        border: 0 !important;
+
+        &:hover {
+            background: none;
+        }
+
+        &--prev {
+            left: 109px;
+
+            @include media-down(xl) {
+                left: 70px;
+            }
+
+            @include media-down(md) {
+                left: 50px;
+            }
+
+            @include media-down(sm) {
+                left: 20px;
+            }
+        }
+
+        &--next {
+            right: 109px;
+
+            @include media-down(xl) {
+                right: 70px;
+            }
+
+            @include media-down(md) {
+                right: 50px;
+            }
+
+            @include media-down(sm) {
+                right: 20px;
+            }
+        }
+    }
+}
+
+.page-slide {
+    width: 100%;
+    height: 32.65vw;
+
+    @include media-down(md) {
+        height: 50vw;
+    }
+
+    @include media-down(sm) {
+        height: 60vw;
+    }
+    
+    &__img {
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+.articles {
+    overflow: hidden;
+    
+    &__container {
+        min-height: inherit;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    &__header {
+        margin: 60px 0 30px;
+
+        @include media-down(md) {
+            margin-bottom: 35px;
+        }
+
+        @include media-down(sm) {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__main {
+        margin: 30px 0 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include media-down(md) {
+            margin-top: 35px;
+        }
+
+        @include media-down(sm) {
+            margin-top: 25px;
+        }
+    }
+
+    &__button {
+        margin-top: 6.5vh;
+    }
+}

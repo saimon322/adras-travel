@@ -1,0 +1,139 @@
+.tours-slider {
+    @include sliderDefault;
+    padding-bottom: 60px;
+
+    @include media-down(sm) {
+        padding-bottom: 40px;
+    }
+}
+
+.tours-slide {
+    height: 448px;
+    position: relative;
+    color: #fff;
+    border-radius: 25px;
+    box-shadow: $shadow-slide;
+
+    @include media-down(md) {
+        height: 398px;
+    }
+
+    @include media-down(sm) {
+        height: 312px;
+        border-radius: 15px;
+    }
+
+    &__bg {
+        position: absolute;
+        border-radius: 25px;
+        overflow: hidden;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #C4C4C4;
+
+        @include media-down(sm) {
+            border-radius: 15px;
+        }
+
+        img {
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover;
+            transition: transform .5s ease;
+        }
+    }
+
+    &__price {
+        position: absolute;
+        z-index: 1;
+        left: 20px;
+        top: 23px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 93px;
+        height: 33px;
+        font-weight: bold;
+        line-height: 19px;
+        background: $color-main;
+        border-radius: 40px;
+        box-shadow: $shadow-tour;
+
+        @include media-down(sm) {
+            left: 15px;
+            top: 15px;
+            width: 70px;
+            height: 25px;
+            border-radius: 30px;
+            font-size: 12px;
+        }
+    }
+
+    &__content {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        padding: 65px 43px 35px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        @include media-down(sm) {
+            padding: 50px 32px 20px 15px;
+        }
+    }
+
+    &__type {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    &__title {
+        line-height: 110%;
+        margin-bottom: 12px;
+
+        @include media-down(sm) {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__time {
+        font-family: $font-2;
+        font-size: 14px;
+        line-height: 110%;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    &__arrow {
+        position: absolute;
+        z-index: 1;
+        width: 30px;
+        height: 30px;
+        right: 20px;
+        bottom: 70px;
+
+        svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        @include media-down(md) {
+            bottom: 66px;
+        }
+
+        @include media-down(sm) {
+            width: 25px;
+            height: 25px;
+            right: 15px;
+            bottom: 49px;
+        }
+    }
+
+    &:hover &__bg img {
+        transform: scale(1.1);
+    }
+}

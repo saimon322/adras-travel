@@ -1,0 +1,148 @@
+.faq {
+    margin: 140px 0 80px;
+
+    @include media-down(xl) {
+        margin: 120px 0 80px;
+    }
+
+    @include media-down(lg) {
+        margin: 100px 0 50px;
+    }
+
+    @include media-down(md) {
+        margin: 100px 0 60px;
+    }
+    
+    @include media-down(sm) {
+        margin: 60px 0 40px;
+    }
+
+    &__title {
+        text-align: center;
+        margin-bottom: 80px;
+
+        @include media-down(md) {
+            margin-bottom: 60px;
+        }
+
+        @include media-down(sm) {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.faq-item {
+    width: 100%;
+    max-width: 1048px;
+    margin: 0 auto;
+    border-bottom: 1px solid $color-border-gray;
+
+    &:first-child {
+        border-top: 1px solid $color-border-gray;
+    }
+
+    &__header {
+        min-height: 120px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        @include media-down(xl) {
+            min-height: 100px;
+        }
+
+        @include media-down(md) {
+            min-height: 94px;
+        }
+
+        @include media-down(sm) {
+            min-height: 0;
+        }
+    }
+
+    &__question {
+        padding: 18px 0;
+        font-size: 30px;
+        line-height: 140%;
+        flex-grow: 1;
+
+        @include media-down(xl) {
+            font-size: 24px;
+        }
+
+        @include media-down(md) {
+            padding: 15px 0;
+            font-size: 22px;
+        }
+
+        @include media-down(sm) {
+            font-size: 20px;
+        }
+
+        @include media-down(xs) {
+            font-size: 18px;
+        }
+    }
+
+    &__button {
+        width: 100px;
+        height: 120px;
+        position: relative;
+        flex-shrink: 0;
+        cursor: pointer;
+        transition: transform .25s ease;
+        will-change: transform;
+
+        @include media-down(xl) {
+            height: 100px;
+        }
+
+        @include media-down(md) {
+            height: 94px;
+        }
+
+        @include media-down(sm) {
+            width: 50px;
+            height: 70px;
+        }
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            left: 50%; top: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            width: 33px; height: 2px;
+            background: #000;
+
+            @include media-down(sm) {
+                width: 20px;
+            }
+        }
+
+        &:after {
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+    }
+
+    &__answer {
+        display: none;
+        padding: 10px 0 40px;
+        @include text24;
+        line-height: 130%;
+        max-width: 800px;
+
+        @include media-down(sm) {
+            padding: 10px 0 20px;
+        }
+
+        @include media-down(xs) {
+            font-size: 16px;
+        }
+    }
+
+    &--active &__button {
+        transform: rotate(135deg);
+    }
+}

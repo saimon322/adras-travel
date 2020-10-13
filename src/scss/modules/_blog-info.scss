@@ -1,0 +1,110 @@
+.blog-info {
+    width: 100%;
+    border: 2px solid $color-card;
+    border-radius: 25px;
+    padding: 50px 65px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    @include media-down(md) {
+        padding: 30px 30px 20px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    @include media-down(sm) {
+        padding: 30px 20px;
+    }
+
+    @include media-down(xs) {
+        padding: 10px 20px;
+        display: block;
+    }
+
+    &__item {
+        max-width: 305px;
+
+        @include media-down(md) {
+            width: calc(100% / 3);
+            padding: 0 10px;
+            margin: 10px 0;
+            max-width: unset;
+        }
+
+        @include media-down(xs) {
+            width: 100%;
+            margin: 15px 0;
+        }
+    }
+
+    &--five &__item {
+        @include media-up(lg) {
+            max-width: 158px;
+        }
+    }
+
+    &__item:nth-child(1) &__title {
+        color: $color-main;
+    }
+
+    &__header {
+        min-height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 8px;
+
+        @include media-down(xl) {
+            min-height: 48px;
+        }
+
+        @include media-down(sm) {
+            min-height: 42px;
+        }
+
+        @include media-down(xs) {
+            min-height: 0;
+        }
+    }
+
+    &__title {
+        font-family: $font-2;
+        @include text24;
+        line-height: 120%;
+        text-transform: uppercase;
+
+        span {
+            font-size: 45px;
+            line-height: 100%;
+
+            @include media-down(xl) {
+                font-size: 36px;
+            }
+
+            @include media-down(sm) {
+                font-size: 30px;
+            }
+        }
+    }
+
+    &__text {
+        font-size: 18px;
+        line-height: 140%;
+        color: $color-gray-1;
+
+        @include media-down(md) {
+            font-size: 16px;
+        }
+
+        &--small {
+            font-size: 14px;
+            line-height: 110%;
+
+            @include media-down(md) {
+                font-size: 12px;
+            }
+        }
+    }
+}

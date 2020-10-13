@@ -1,5 +1,4 @@
 :root {
-
     --mb-button-size: 20px;
     --mb-bar-width: 1;
     --mb-bar-height: 2px;
@@ -34,13 +33,6 @@
     @include media-down(sm) {
         margin-top: 8px;
     }
-
-    &:hover {
-
-        b {
-            background-color: $color-main;
-        }
-    }
 }
 
 .hamburger b {
@@ -49,7 +41,7 @@
     left: calc(var(--mb-button-size) * ((1 - var(--mb-bar-width)) / 2));
     width: calc(var(--mb-button-size) * var(--mb-bar-width));
     height: var(--mb-bar-height);
-    background-color: #fff;
+    background-color: #000;
     color: inherit;
     opacity: 1;
 
@@ -87,5 +79,11 @@
             transform: rotate(225deg);
             transition-delay: calc(var(--mb-animate-timeout) + 0s), calc(var(--mb-animate-timeout) + .2s);
         }
+    }
+}
+
+.show-dropdown-nav {
+    .hamburger b {
+        background-color: #fff;
     }
 }

@@ -1,0 +1,182 @@
+.page-main {
+    margin: 64px 0;
+
+    @include media-down(lg) {
+        margin: 40px 0 60px;
+    }
+
+    @include media-down(sm) {
+        margin: 30px 0 40px;
+    }
+
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px 0;
+
+        @include media-down(lg) {
+            display: block;
+            margin: 40px 0;
+        }
+
+        @include media-down(sm) {
+            margin: 30px 0;
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &--border {
+            border-top: 1px solid #000;
+            padding-top: 50px;
+
+            @include media-down(lg) {
+                padding-top: 40px;
+            }
+    
+            @include media-down(sm) {
+                padding-top: 30px;
+            }
+        }
+    }
+
+    &__left {
+        width: 395px;
+        margin-right: 40px;
+
+        @include media-down(xl) {
+            width: 330px;
+        }
+
+        @media (max-width: 1300px) {
+            width: 280px;
+        }
+
+        @include media-down(lg) {
+            width: 100%;
+            margin-right: 0;
+            display: flex;
+            max-width: 723px;
+        }
+
+        @include media-down(sm) {
+            display: block;
+        }
+    }
+
+    &__right {
+        flex: 1 1 0;
+        max-width: 723px;
+    }
+
+    &__title {
+    
+        @include media-down(lg) {
+            flex: 1 1 0;
+            margin-bottom: 20px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 60px;
+    
+            @include media-down(xl) {
+                margin-bottom: 50px;
+            }
+    
+            @include media-down(lg) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__text {
+        @include text24;
+    }
+
+    &__info {
+        padding: 42px 0;
+        width: 100%;
+        max-width: 287px;
+        color: $color-gray-1;
+        border-top: 1px solid $color-border-gray;
+        border-bottom: 1px solid $color-border-gray;
+
+        @include media-down(xl) {
+            padding: 30px 0;
+        }
+
+        @include media-down(lg) {
+            padding: 15px 0;
+            margin-left: 30px;
+            margin-bottom: 30px;
+        }
+
+        @include media-down(sm) {
+            max-width: 70%;
+            margin-left: 0;
+        }
+
+        @include media-down(xs) {
+            max-width: 100%;
+        }
+
+        h6 {
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: inherit;
+            font-size: 12px;
+            margin-bottom: 20px;
+    
+            @include media-down(sm) {
+                margin-bottom: 15px;
+            }
+    
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        a {
+            color: $color-main;
+            font-weight: bold;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        margin: 50px 0;
+
+        @include media-down(lg) {
+            margin: 40px 0;
+        }
+
+        @include media-down(sm) {
+            margin: 30px 0;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__left &__img {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+
+        @include media-down(lg) {
+            margin-bottom: 30px;
+        }
+
+        img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+        }
+    }
+}

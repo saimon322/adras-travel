@@ -1,0 +1,76 @@
+.tour-benefits {
+
+    @include media-up(md) {
+        display: flex;
+    }
+    
+    &__item {
+        @include media-up(md) {
+            width: calc((100% - 40px) / 2);
+            flex-shrink: 0;
+        }
+
+        &:first-child {
+            margin-right: 40px;
+
+            @include media-down(sm) {
+                margin-right: 0;
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__list {
+
+        li {
+            padding-left: 52px;
+            @include text24;
+            position: relative;
+
+            @include media-down(sm) {
+                padding-left: 40px;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+
+                @include media-down(md) {
+                    margin-bottom: 20px;
+                }
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0; top: 4px;
+                display: block;
+                width: 27px; height: 27px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+
+                @include media-down(xl) {
+                    top: 1px;
+                }
+
+                @include media-down(sm) {
+                    width: 22px;
+                    height: 22px;
+                    top: 1px;
+                }
+            }
+        }
+
+        &--include li:before {
+            background-image: url(../img/svg-sprite/icon-include.svg);
+        }
+
+        &--exclude li:before {
+            background-image: url(../img/svg-sprite/icon-exclude.svg);
+        }
+    }
+}

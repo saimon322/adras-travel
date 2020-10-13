@@ -1,0 +1,29 @@
+select {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    appearance: none;
+    background-image: url(../img/svg-sprite/icon-select.svg);
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 91% 53%;
+
+    @include media-down(xl) {
+        font-size: 18px;
+    }
+
+    @include media-down(sm) {
+        font-size: 16px;
+        background-size: 15px;
+    }
+
+    option {
+        color: #000;
+        background-color: #fff;
+
+        &:disabled {
+            display: none;
+        }
+    }
+}

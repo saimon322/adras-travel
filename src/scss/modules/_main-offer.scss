@@ -1,0 +1,126 @@
+.main-offer {
+    height: 100vh;
+    padding-top: 144px;
+    padding-bottom: 344px;
+    display: flex;
+    align-items: center;
+    background: #000;
+
+    @include media-down(sm) {
+        padding-top: 25vh;
+        padding-bottom: 0;
+        display: block;
+    }
+
+    &__bg {
+        &:before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0;
+            display: block;
+            width: 100%; height: 100%;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0) 65.1%, #000000 92.19%);
+        }
+    }
+
+    &__title {
+        max-width: 920px;
+        text-align: center;
+        color: #fff;
+        font-weight: 300;
+        margin: 0 auto;
+
+        @media (max-width: 350px) {
+            font-size: 34px;
+
+            br {
+                display: none;
+            }
+        }
+    }
+
+    &__panel {
+        position: absolute;
+        left: 0;
+        bottom: 87px;
+        width: 100%;
+
+        @include media-down(md) {
+            bottom: 60px;
+        }
+
+        @include media-down(sm) {
+            bottom: 85px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__selects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        @include media-down(lg) {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+
+        @include media-down(sm) {
+            margin-bottom: 0;
+        }
+    }
+    
+    &__select {
+        position: relative;
+        margin-right: 75px;
+
+        @include media-down(lg) {
+            margin: 0 15px;
+        }
+
+        @include media-down(sm) {
+            margin-bottom: 10px;
+        }
+    }
+    
+    select {
+        width: 326px;
+        max-width: 100%;
+        height: 57px;
+        padding-left: 34px;
+        padding-right: 22px;
+        background-color: transparent;
+        color: #fff;
+        border: 2px solid $color-gray;
+        border-radius: 40px;
+        background-image: url(../img/svg-sprite/icon-select-white.svg);
+
+        @include media-up(md) {
+            background-size: 20px;
+        }
+    
+        option {
+            color: #000;
+            background-color: #fff;
+    
+            &:disabled {
+                display: none;
+            }
+        }
+    
+        @include media-down(md) {
+            width: 300px;
+        }
+    
+        @include media-down(sm) {
+            width: 250px;
+            height: 45px;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    }
+}

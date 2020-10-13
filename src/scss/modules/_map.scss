@@ -1,0 +1,250 @@
+.map {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+
+    .section__flex,
+    .section__block,
+    .section__container {
+        min-height: unset;
+    }
+
+
+    @include media-up(lg) {
+        background-color: $color-gray;
+
+        &__container {
+            min-height: inherit;
+            padding-top: 17vh;
+            z-index: 1;
+        }
+    }
+
+    @include media-down(md) {
+        overflow: unset;
+    }
+
+    &__content {
+        position: absolute;
+        z-index: 1;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 56.25vw;
+
+        @include media-only(lg) {
+            width: 120%;
+            left: 60%;
+            height: 67.5vw;
+        }
+
+        @include media-down(md) {
+            position: relative;
+            top: 0;
+            left: 0;
+            transform: none;
+            order: 1;
+        }
+
+        @include media-down(xs) {
+            width: 150%;
+            height: 84.375vw;
+            left: -35%;
+        }
+    }
+
+    &__bg {
+        z-index: -1;
+    }
+
+    &__compass {
+        position: absolute;
+        z-index: 1;
+        width: 10.41%;
+        left: 5vw;
+        bottom: 6vh;
+
+        @include media-down(lg) {
+            width: 150px;
+        }
+
+        @include media-down(md) {
+            bottom: 35vw;
+            width: 120px;
+        }
+
+        @include media-down(xs) {
+            left: 20px;
+            width: 100px;
+            bottom: 55vw;
+            width: 20%;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__points {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.map-point {
+    position: absolute;
+    z-index: 1;
+
+    &:nth-child(1) {
+        left: 59.17%;
+        top: 28.8%;
+    }
+
+    &:nth-child(2) {
+        left: 51.15%;
+        top: 61.75%;
+    }
+
+    &:nth-child(3) {
+        left: 45.47%;
+        top: 70.09%;
+    }
+
+    &:nth-child(4) {
+        left: 61.56%;
+        top: 71.11%;
+    }
+
+    &:nth-child(5) {
+        left: 67.76%;
+        top: 62.5%;
+    }
+
+    &--active {
+        z-index: 2;
+    }
+
+    &--active &__content {
+        animation: mapPointIn .3s ease forwards;
+    }
+
+    &__dot {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        width: 20px;
+        height: 20px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: $color-main;
+        box-shadow: $shadow;
+        cursor: pointer;
+
+        @include media-down(md) {
+            width: 15px;
+            height: 15px;
+        }
+
+        @include media-down(sm) {
+            width: 10px;
+            height: 10px;
+        }
+    }
+
+    &__hint {
+        position: absolute;
+        z-index: -1;
+        left: 20px;
+        top: -12px;
+        font-size: 20px;
+        color: #ffffff;
+        margin: 0;
+
+        @include media-down(md) {
+            left: 15px;
+            top: -8px;
+            font-size: 14px;
+        }
+
+        @include media-down(sm) {
+            left: 10px;
+            top: -6px;
+            font-size: 10px;
+        }
+
+        @media (max-width: 350px) {
+            top: -5px;
+            font-size: 9px;
+        }
+    }
+
+    &__content {
+        min-width: 290px;
+        position: absolute;
+        left: -32px;
+        top: -60px;
+        background: #FFFFFF;
+        box-shadow: $shadow;
+        border-radius: 25px;
+        padding: 40px 30px 40px 60px;
+        opacity: 0;
+        visibility: hidden;
+        animation: mapPointOut .1s ease;
+
+        @include media-down(sm) {
+            min-width: 0;
+            width: 200px;
+            left: calc(50% - 100px);
+            padding: 40px 25px 30px;
+            top: -20px;
+            border-radius: 20px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 8px;
+
+        @include media-down(sm) {
+            font-size: 22px;
+        }
+    }
+
+    &__text {
+        font-size: 14px;
+        max-width: 193px;
+
+        @include media-down(sm) {
+            font-size: 12px;
+        }
+    }
+
+    &__button {
+        margin-top: 15px;
+
+        @include media-up(md) {
+            padding: 0 29px;
+            margin-top: 25px;
+    
+            svg {
+                margin-left: 17px;
+            }
+        }
+    }
+}
+
+@keyframes mapPointIn {
+    0% {opacity: 0; visibility: hidden; transform: scale(0.9);}
+    70% {transform: scale(1.1);}
+    100% {opacity: 1; visibility: visible; transform: scale(1);}
+}
+
+@keyframes mapPointOut {
+    0% {opacity: 1; visibility: visible; transform: scale(1);}
+    100% {opacity: 0; visibility: hidden; transform: scale(0.9);}
+}

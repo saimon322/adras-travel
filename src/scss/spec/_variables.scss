@@ -1,10 +1,21 @@
 $grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px, xxl: 1500px);
 
 // Fonts
-$font1: "Roboto", Tahoma, sans-serif;
-$font2: "Oswald", Tahoma, sans-serif;
-$font3: "Montserrat", Tahoma, sans-serif;
+$font-1: Roboto, Tahoma, sans-serif;
+$font-2: Oswald, Tahoma, sans-serif;
+$font-3: Montserrat, Tahoma, sans-serif;
 
 // Colors
-$color-main: #3DD98E;
-$color-text: #373737;
+$color-main:        #3DD98E;
+$color-text:        #373737;
+$color-gray:        #ECF0F3;
+$color-gray-1:      #B1BDC9;
+$color-border-gray: #D8E2EA;
+$color-card:        #E0E8EE;
+$color-hover-black: rgba(0, 0, 0, 0.05);
+$color-hover-white: rgba(255, 255, 255, 0.1);
+
+// Shadows
+$shadow: 0px 16px 24px rgba(0, 0, 0, 0.06), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+$shadow-slide: 0px 24px 32px rgba(0, 0, 0, 0.04), 0px 16px 24px rgba(0, 0, 0, 0.04), 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+$shadow-tour: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);

@@ -1,0 +1,87 @@
+.swiper-container {
+    overflow: visible;
+    width: 100%;
+}
+
+.swiper-slide {
+    transition: opacity .5s, visibility .5s;
+}
+
+.slider-scrollbar {
+    width: 100%;
+    height: 2px !important;
+    border-radius: 0;
+    padding: 0;
+    background: $color-gray-1;
+    transition: none;
+    position: absolute;
+    bottom: 0;
+}
+    
+.swiper-scrollbar-drag {
+    position: relative;
+    width: 86px;
+    height: 12px;
+    top: -5px;
+    border-radius: 40px;
+    background: $color-gray-1;
+    cursor: pointer;
+    transition: none;
+}
+
+.swiper-button {
+    width: 59px;
+    height: 59px;
+    cursor: pointer;
+    border: 0;
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    margin-top: -30px;
+    color: $color-gray-1;
+    border-radius: 50%;
+    transition: .3s ease;
+    transition-property: background-color, transform;
+
+    &:hover {
+        background-color: $color-hover-black;
+    }
+
+    @include media-down(sm) {
+        width: 40px;
+        height: 40px;
+        margin-top: -20px;
+    }
+
+    &--prev {
+        left: -104px;
+
+        &:active {
+            transform: translateX(-10px);
+        }
+
+        @include media-down(lg) {
+            left: -80px;
+        }
+
+        @include media-down(md) {
+            left: -89px;
+        }
+    }
+
+    &--next {
+        right: -104px;
+
+        &:active {
+            transform: translateX(10px);
+        }
+
+        @include media-down(lg) {
+            right: -80px;
+        }
+
+        @include media-down(md) {
+            right: -89px;
+        }
+    }
+}

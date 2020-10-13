@@ -1,0 +1,327 @@
+<%=_.template(require('../parts/main-header.html'))({
+    title: "Наши услуги | Adras Travel",
+    isWhite: true,
+    menu: {services: "current-menu-item"}
+}) %>
+
+<main class="site-main">
+    <section class="page-header">
+        <div class="container page-flex">
+            <div class="page-flex__left">
+                <div class="breadcrumbs">
+                    <span><a href="#">Главная</a></span>
+                    <span>/</span>
+                    <span>Услуги</span>
+                </div>
+                <h1 class="page-header__title">Наши услуги</h1>
+            </div>
+            <div class="page-flex__right">
+                <p class="page-header__text">
+                    Предлагаем большой выбор сопутствующих экскурсионных услуг. По вашему желанию мы 
+                    забронируем гостиницу, авиа- или железнодорожный билет, организуем корпоративный 
+                    отдых или деловую поездку. Свяжитесь с нами и вы получите консультацию специалиста 
+                    по необходимому вопросу.
+                </p>
+            </div>
+        </div>
+    </section><!-- /.page-header -->
+
+    <section class="section section--sticky section--auto-height">
+        <div class="container container--wide">
+            <div class="page-flex">
+                <div class="page-flex__aside page-aside">
+                    <ul class="page-aside__list">
+                        <li class="current-menu-item">
+                            <a href="#" class="page-aside__link">
+                                <h5>Бронирование отеля</h5>
+                                <svg width='27' height='27'>
+                                    <use xlink:href='#icon-arrow-link'></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="page-aside__link">
+                                <h5>Гиды</h5>
+                                <svg width='27' height='27'>
+                                    <use xlink:href='#icon-arrow-link'></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="page-aside__link">
+                                <h5>Транспорт</h5>
+                                <svg width='27' height='27'>
+                                    <use xlink:href='#icon-arrow-link'></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="page-aside__link">
+                                <h5>Трансфер</h5>
+                                <svg width='27' height='27'>
+                                    <use xlink:href='#icon-arrow-link'></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="page-aside__link">
+                                <h5>ЖД и авиабилеты</h5>
+                                <svg width='27' height='27'>
+                                    <use xlink:href='#icon-arrow-link'></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="page-aside__link">
+                                <h5>Виза</h5>
+                                <svg width='27' height='27'>
+                                    <use xlink:href='#icon-arrow-link'></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="page-aside__link">
+                                <h5>Mice-мероприятия</h5>
+                                <svg width='27' height='27'>
+                                    <use xlink:href='#icon-arrow-link'></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="page-aside__mobile">
+                        <span>Развернуть</span>
+                        <span>Свернуть</span>
+                    </div>
+                </div><!-- /.page-flex__aside -->
+
+                <div class="page-flex__main page-main">
+                    <div class="page-main__block">
+                        <div class="page-main__left">
+                            <h2 class="page-main__title">Бронирование отеля</h2>
+                        </div>
+                        <div class="page-main__right">
+                            <p class="page-main__text">
+                                Мы поможем вам забронировать гостиницы на ваш вкус и кошелек в любом городе Узбекистана. 
+                                Сообщите нам свои предпочтения и мы организуем для вас наилучшее размещение.
+                                <br><br>
+                                Пожалуйста, обратите внимание, что например, отели категории три звезды в Узбекистане 
+                                не всегда соответствуют стандарту трех звезд  Европы.
+                            </p>
+                        </div>
+                    </div><!-- /.page-main__block -->
+                </div><!-- /.page-flex__main -->
+            </div>
+        </div>
+    </section><!-- / .section -->
+
+    <section class="section section--bg--black articles">
+        <div class="articles__container container">
+            <div class="articles__header page-flex">
+                <div class="page-flex__left">
+                    <h2>Полезные<br> статьи по теме</h2>
+                </div>
+                <div class="page-flex__right">
+                    <p class="text24">
+                        Мы будем рады поделиться с вами нашими знаниями. Ниже вы найдете не только информацию 
+                        о визовых требованиях, но и много информации о географии, истории, культуре, традициях 
+                        и известных личностях Узбекистана.  
+                    </p>
+                </div>
+            </div><!-- /.articles__header -->
+
+            <div class="articles__main">
+                <div class="articles-slider js-slider" id="articles-slider-2">
+                    <div class="swiper-slide articles-slider__slide articles-slide">
+                        <a href="#" class="articles-slide__card">
+                            <picture class='articles-slide__bg'>
+                                <source srcset='img/base/slider-15@1x.webp 1x,
+                                                img/base/slider-15@2x.webp 2x'
+                                    type='image/webp'>
+                                <img src='img/base/slider-15@1x.jpg'
+                                    srcset='img/base/slider-15@1x.jpg 1x,
+                                            img/base/slider-15@2x.jpg 2x'
+                                    width='287'
+                                    height='448'
+                                    alt='Adras Travel'
+                                    title='Adras Travel'>
+                            </picture>
+                            <div class="articles-slide__content">
+                                <div class="articles-slide__type">Блог о путешествиях</div>
+                                <h3 class="articles-slide__title">Лучшие отели в Узбекистане</h3>
+                                <div class="articles-slide__text">Топ-10 лучших отелей от 3* до 5* — на любой вкус и кошелёк.</div>
+                            </div>
+                        </a>
+                        <a href="#" class="button button--opacity articles-slide__button">
+                            Читать
+                            <svg width="16" height="16">
+                                <use xlink:href="#icon-arrow-button"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="swiper-slide articles-slider__slide articles-slide">
+                        <a href="#" class="articles-slide__card">
+                            <picture class='articles-slide__bg'>
+                                <source srcset='img/base/slider-16@1x.webp 1x,
+                                                img/base/slider-16@2x.webp 2x'
+                                    type='image/webp'>
+                                <img src='img/base/slider-16@1x.jpg'
+                                    srcset='img/base/slider-16@1x.jpg 1x,
+                                            img/base/slider-16@2x.jpg 2x'
+                                    width='287'
+                                    height='448'
+                                    alt='Adras Travel'
+                                    title='Adras Travel'>
+                            </picture>
+                            <div class="articles-slide__content">
+                                <div class="articles-slide__type">Блог о путешествиях</div>
+                                <h3 class="articles-slide__title">«Комфортная» виза</h3>
+                                <div class="articles-slide__text">Как получить визу в страны Центральной Азии и кому она нужна.</div>
+                            </div>
+                        </a>
+                        <a href="#" class="button button--opacity articles-slide__button">
+                            Читать
+                            <svg width="16" height="16">
+                                <use xlink:href="#icon-arrow-button"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="swiper-slide articles-slider__slide articles-slide">
+                        <a href="#" class="articles-slide__card">
+                            <picture class='articles-slide__bg'>
+                                <source srcset='img/base/slider-10@1x.webp 1x,
+                                                img/base/slider-10@2x.webp 2x'
+                                    type='image/webp'>
+                                <img src='img/base/slider-10@1x.jpg'
+                                    srcset='img/base/slider-10@1x.jpg 1x,
+                                            img/base/slider-10@2x.jpg 2x'
+                                    width='287'
+                                    height='448'
+                                    alt='Adras Travel'
+                                    title='Adras Travel'>
+                            </picture>
+                            <div class="articles-slide__content">
+                                <div class="articles-slide__type">Блог о путешествиях</div>
+                                <h3 class="articles-slide__title">10 мест в&nbsp;узбекистане</h3>
+                                <div class="articles-slide__text">Что посмотреть в Узбекистане за&nbsp;5&nbsp;дней, неделю, месяц.</div>
+                            </div>
+                        </a>
+                        <a href="#" class="button button--opacity articles-slide__button">
+                            Читать
+                            <svg width="16" height="16">
+                                <use xlink:href="#icon-arrow-button"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="swiper-slide articles-slider__slide articles-slide">
+                        <a href="#" class="articles-slide__card">
+                            <picture class='articles-slide__bg'>
+                                <source srcset='img/base/slider-14@1x.webp 1x,
+                                                img/base/slider-14@2x.webp 2x'
+                                    type='image/webp'>
+                                <img src='img/base/slider-14@1x.jpg'
+                                    srcset='img/base/slider-14@1x.jpg 1x,
+                                            img/base/slider-14@2x.jpg 2x'
+                                    width='287'
+                                    height='448'
+                                    alt='Adras Travel'
+                                    title='Adras Travel'>
+                            </picture>
+                            <div class="articles-slide__content">
+                                <div class="articles-slide__type">Блог о путешествиях</div>
+                                <h3 class="articles-slide__title">Культура Узбекистана</h3>
+                                <div class="articles-slide__text">Традиции и обычаи в узбекской культуре и истории.</div>
+                            </div>
+                        </a>
+                        <a href="#" class="button button--opacity articles-slide__button">
+                            Читать
+                            <svg width="16" height="16">
+                                <use xlink:href="#icon-arrow-button"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="swiper-slide articles-slider__slide articles-slide">
+                        <a href="#" class="articles-slide__card">
+                            <picture class='articles-slide__bg'>
+                                <source srcset='img/base/slider-4@1x.webp 1x,
+                                                img/base/slider-4@2x.webp 2x'
+                                    type='image/webp'>
+                                <img src='img/base/slider-4@1x.jpg'
+                                    srcset='img/base/slider-4@1x.jpg 1x,
+                                            img/base/slider-4@2x.jpg 2x'
+                                    width='287'
+                                    height='448'
+                                    alt='Adras Travel'
+                                    title='Adras Travel'>
+                            </picture>
+                            <div class="articles-slide__content">
+                                <div class="articles-slide__type">Блог о путешествиях</div>
+                                <h3 class="articles-slide__title">Великий шелковый путь</h3>
+                                <div class="articles-slide__text">Караванная дорога из Китая в&nbsp;страны Азии длиной в 7000 км.</div>
+                            </div>
+                        </a>
+                        <a href="#" class="button button--opacity articles-slide__button">
+                            Читать
+                            <svg width="16" height="16">
+                                <use xlink:href="#icon-arrow-button"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div><!-- /.articles-slider -->
+                
+                <a href="#" class="button articles__button" title="Больше статей">Больше статей</a>
+            </div><!-- /.articles__main -->
+        </div>
+    </section><!-- / .articles -->
+
+    <section class="info-cards">
+        <div class="container info-cards__container">
+            <div class="info-cards__list">
+                <div class="info-cards__item info-card">
+                    <div class="info-card__content">
+                        <h4 class="info-card__title">Полезная информация для&nbsp;путешествий</h4>
+                    </div>
+                </div>
+                <div class="info-cards__item info-card">
+                    <div class="info-card__content">
+                        <h4 class="info-card__title">Документы, виза</h4>
+                        <p class="info-card__text">
+                            Список документов, подача заявления в&nbsp;Консульство и др.
+                        </p>
+                    </div>
+                    <a href="#" class="button button--shadow info-card__button">Читать</a>
+                </div>
+                <div class="info-cards__item info-card">
+                    <div class="info-card__content">
+                        <h4 class="info-card__title">Оплата туров</h4>
+                        <p class="info-card__text">
+                            Правила и способы оплаты туров, рассчёт поездки.
+                        </p>
+                    </div>
+                    <a href="#" class="button button--shadow info-card__button">Читать</a>
+                </div>
+                <div class="info-cards__item info-card">
+                    <div class="info-card__content">
+                        <h4 class="info-card__title">Бронирование</h4>
+                        <p class="info-card__text">
+                            Подтверждение брони, лист ожидания, отказ.
+                        </p>
+                    </div>
+                    <a href="#" class="button button--shadow info-card__button">Читать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <%=_.template(require('../parts/faq.html'))() %>
+</main><!-- / .site-main -->
+
+<%=_.template(require('../parts/main-form.html'))({
+    isGray: true
+}) %>
+
+<%=_.template(require('../parts/main-footer.html'))() %>

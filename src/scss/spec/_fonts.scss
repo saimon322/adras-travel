@@ -64,6 +64,15 @@
 @font-face {
     font-display: swap;
     font-style: normal;
+    font-weight: 500;
+    font-family: "Oswald";
+    src: url("fonts/Oswald-medium.woff2") format("woff2"),
+         url("fonts/Oswald-medium.woff") format("woff");
+}
+
+@font-face {
+    font-display: swap;
+    font-style: normal;
     font-weight: 700;
     font-family: "Montserrat";
     src: url("fonts/Montserrat-extrabold.woff2") format("woff2"),

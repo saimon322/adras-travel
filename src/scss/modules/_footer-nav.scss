@@ -1,8 +1,19 @@
 .footer-nav {
+    flex-shrink: 0;
+
+    @include media-up(xxl) {
+        margin-right: 30px;
+    }
+
     @include media-down(lg) {
         width: 100%;
         margin-top: 50px;
     }
+
+    @include media-down(xs) {
+        margin-top: 40px;
+    }
+    
     &__list {
         display: flex;
         flex-wrap: wrap;
@@ -19,6 +30,10 @@
             }
         }
 
+        a {
+            transition: color .2s ease;
+        }
+
         & > li {
             max-width: 220px;
             margin-bottom: 0;
@@ -28,7 +43,7 @@
             }
 
             @include media-down(xs) {
-                width: calc(50% - 15px);
+                width: calc(50% - 10px);
                 margin-bottom: 40px;
             }
 
@@ -36,7 +51,7 @@
                 margin-right: 96px;
 
                 @include media-down(xl) {
-                    margin-right: 50px;
+                    margin-right: 75px;
                 }
 
                 @include media-down(lg) {

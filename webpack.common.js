@@ -6,9 +6,22 @@ const CopyPlugin = require('copy-webpack-plugin');
 const SpriteLoaderPlugin = require('svg-sprite-loader/plugin');
 const webpack = require('webpack');
 
-const PAGES = fs
-    .readdirSync('./src')
-    .filter(fileName => fileName.endsWith('.html'));
+function generateHtmlPlugins(templateDir) {
+    const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir));
+    return templateFiles.map(item => {
+      const parts = item.split('.');
+      const name = parts[0];
+      const extension = parts[1];
+      return new HtmlWebpackPlugin({
+        filename: `${name}.html`,
+        template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
+        inject: false,
+        minify: false,
+      })
+    })
+}
+  
+const htmlPlugins = generateHtmlPlugins('./src/html/views')
 
 module.exports = mode => {
     const PRODUCTION = mode === 'production';
@@ -32,19 +45,18 @@ module.exports = mode => {
                         'svgo-loader',
                     ]
                 },
+                {
+                    test: /\.html$/,
+                    loader: 'html-loader',
+                    options: {
+                        attributes: false,
+                        minimize: false
+                    },
+                    include: path.resolve(__dirname, 'src/html/parts'),
+                },
             ],
         },
         plugins: [
-            new CleanWebpackPlugin(),
-            ...PAGES.map(
-                page =>
-                    new HtmlWebpackPlugin({
-                        template: `./src/${page}`,
-                        filename: `./${page}`,
-                        inject: false,
-                        minify: false,
-                    })
-            ),
             new webpack.DefinePlugin({
                 PRODUCTION: PRODUCTION,
             }),
@@ -59,10 +71,9 @@ module.exports = mode => {
                 {
                     context: 'src',
                     force: true,
-                    // copyUnmodified: true,
                 }
             ),
             new SpriteLoaderPlugin(),
-        ],
+        ].concat(htmlPlugins),
     }
 };

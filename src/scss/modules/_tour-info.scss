@@ -1,0 +1,104 @@
+.tour-info {
+
+    @include media-down(md) {
+        max-width: 520px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 66px;
+
+        @include media-down(xl) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__wrapper {
+        border: 2px solid $color-card;
+        box-sizing: border-box;
+        border-radius: 25px;
+        padding: 34px 23px 24px;
+        display: flex;
+
+        @include media-down(xl) {
+            padding: 30px 20px 20px;
+        }
+
+        @include media-down(lg) {
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 20px;
+        }
+    }
+
+    &__time {
+        flex-shrink: 0;
+        width: 178px;
+        height: 47px;
+        font-family: $font-2;
+        font-family: 18px;
+        text-transform: uppercase;
+        background-color: $color-gray;
+        color: #000;
+        box-shadow: $shadow-tour;
+        margin-right: 37px;
+
+        &:hover {
+            background-color: rgba(0,0,0,0.05);
+        }
+
+        @include media-down(xl) {
+            margin-right: 20px;
+        }
+    }
+
+    &__hint {
+        margin-top: 20px;
+        padding: 0 30px;
+        font-size: 14px;
+        line-height: 120%;
+        text-align: center;
+
+        a {
+            color: $color-main;
+        }
+    }
+
+    &__prices {
+        margin-top: 10px;
+
+        @include media-down(lg) {
+            margin-top: 30px;
+        }
+    }
+}
+
+.tour-info-price {
+    display: flex;
+    align-items: center;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    &__amount {
+        font-weight: bold;
+        font-size: 26px;
+        margin-right: 25px;
+        width: 75px;
+        flex-shrink: 0;
+
+        @include media-down(xl) {
+            font-size: 24px;
+            width: 70px;
+            margin-right: 20px;
+        }
+    }
+
+    &__text {
+        color: #000;
+        font-size: 14px;
+        line-height: 110%;
+    }
+}

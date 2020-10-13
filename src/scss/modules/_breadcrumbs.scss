@@ -1,0 +1,10 @@
+.breadcrumbs {
+    margin-bottom: 3px;
+    
+    a {
+        transition: color .2s ease;
+        &:hover {
+            color: $color-main;
+        }
+    }
+}

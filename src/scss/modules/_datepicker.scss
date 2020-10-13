@@ -1,0 +1,35 @@
+.datepicker-container {
+    @include media-up(md) {
+        width: 320px;
+    }
+
+    @include media-up(xxl) {
+        width: 364px;
+    }
+}
+
+.datepicker-panel > ul {    
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    & > li {
+        width: calc(100% / 7);
+
+        &[data-view="month current"] {
+            flex-grow: 1;
+        }
+
+        &.picked {
+            color: $color-main !important
+        }
+    }
+}
+.datepicker-top-left, 
+.datepicker-top-right {
+    border-top-color: $color-main;
+
+    &:before {
+        border-bottom-color: $color-main;
+    }
+}

@@ -1,12 +1,10 @@
 /* ==========================================================================
    VENDORS
    ========================================================================== */
-@import "~normalize.css/normalize.css";
 @import "~animate.css/animate.min.css";
-@import "~slick-carousel/slick/slick.css";
-@import "~ion-rangeslider/css/ion.rangeSlider.min.css";
-@import "~@fancyapps/fancybox/dist/jquery.fancybox.min.css";
-@import "~smartwizard/dist/css/smart_wizard.min.css";
+@import "~swiper/swiper-bundle.css";
+@import '~@chenfengyuan/datepicker/dist/datepicker.min.css';
+// @import '~select2/dist/css/select2.min.css';
 
 /* ==========================================================================
    SPECIFICATION
@@ -20,14 +18,81 @@
 @import "spec/animation";
 
 /* ==========================================================================
-   HOME PAGE
+   COMMON ELEMENTS
    ========================================================================== */
 @import "modules/button";
+@import "modules/select";
+@import "modules/datepicker";
+@import "modules/section";
+
+/* ==========================================================================
+   SLIDERS
+   ========================================================================== */
+@import "modules/owl-carousel";
+@import "modules/swiper";
+@import "modules/builds-slider";
+@import "modules/mega-slider";
+@import "modules/tours-slider";
+@import "modules/articles-slider";
+@import "modules/info-slider";
+@import "modules/city-slider";
+@import "modules/page-slider";
+
+/* ==========================================================================
+   HEADER AND FOOTER
+   ========================================================================== */
 @import "modules/main-header";
 @import "modules/hamburger";
 @import "modules/main-nav";
-@import "modules/language-switch";
-@import "modules/main-page";
+@import "modules/lang-switch";
 @import "modules/main-footer";
 @import "modules/footer-nav";
 @import "modules/site-backdrop";
+
+/* ==========================================================================
+   HOME PAGE
+   ========================================================================== */
+@import "modules/main-offer";
+@import "modules/map";
+@import "modules/articles";
+@import "modules/faq";
+@import "modules/main-form";
+
+/* ==========================================================================
+   OTHER PAGES
+   ========================================================================== */
+@import "modules/page-header";
+@import "modules/page-nav";
+@import "modules/page-flex";
+@import "modules/page-aside";
+@import "modules/page-main";
+@import "modules/breadcrumbs";
+@import "modules/text-block";
+@import "modules/contacts-form";
+@import "modules/advantages";
+@import "modules/info-cards";
+
+/* ==========================================================================
+   TOUR PAGES
+   ========================================================================== */
+@import "modules/tours";
+@import "modules/tour-types";
+@import "modules/same-tours";
+@import "modules/tour-info";
+@import "modules/tour-block";
+@import "modules/tour-program";
+@import "modules/tour-housing";
+@import "modules/tour-benefits";
+
+/* ==========================================================================
+   BLOG PAGES
+   ========================================================================== */
+@import "modules/blog-header";
+@import "modules/blog-info";
+
+/* ==========================================================================
+   CONTACTS PAGE
+   ========================================================================== */
+@import "modules/creature";
+@import "modules/contacts";
+@import "modules/files";

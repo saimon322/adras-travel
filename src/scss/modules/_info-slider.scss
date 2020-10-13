@@ -1,0 +1,179 @@
+.info-slider {
+    height: 32vh;
+    padding: 50px 0;
+
+    @include media-down(md) {
+        height: auto;
+    }
+
+    @include media-down(xl) {
+        width: 941px;
+    }
+
+    @include media-down(lg) {
+        width: 825px;
+    }
+
+    @include media-down(md) {
+        width: 550px;
+        padding: 70px 0;
+    }
+
+    @include media-down(sm) {
+        width: 100%;
+        padding: 40px 0;
+    }
+    
+    &__container {
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .swiper-slide-active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .swiper-button {
+
+        &--prev {
+            @include media-down(sm) {
+                left: 20px;
+            }
+
+            @include media-down(xs) {
+                left: -5px;
+            }
+        }
+
+        &--next {
+            @include media-down(sm) {
+                right: 20px;
+            }
+
+            @include media-down(xs) {
+                right: -5px;
+            }
+        }
+    }
+
+    &--gray {
+
+        .swiper-button {
+            color: $color-gray-1;
+    
+            &:hover {
+                background-color: $color-hover-black;
+            }
+        }
+    }
+
+    &--black {
+        color: #fff;
+
+        .swiper-button {
+            color: #fff;
+
+            &:hover {
+                background-color: $color-hover-white;
+            }
+        }
+    }
+}
+
+.info-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: .2s;
+
+    &__content {
+        display: flex;
+        align-items: center;
+
+        @include media-down(sm) {
+            flex-direction: column;
+        }
+
+        @include media-down(xs) {
+            max-width: calc(100% - 110px);
+        }
+    }
+    
+    &__title {
+        height: 115px;
+        font-family: $font-2;
+        font-size: 120px;
+        line-height: 115px;
+        margin-right: 20px;
+        text-transform: uppercase;
+        white-space: nowrap;
+
+        @include media-down(xl) {
+            font-size: 90px;
+            line-height: 95px;
+            height: 93px;
+        }
+
+        @include media-down(md) {
+            font-size: 68px;
+            line-height: 70px;
+            height: 75px;
+        }
+
+        @include media-down(sm) {
+            font-size: 50px;
+            line-height: 40px;
+            height: 45px;
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+
+        span {
+            font-size: 60px;
+            font-weight: 500;
+
+            @include media-down(lg) {
+                font-size: 50px;
+            }
+
+            @include media-down(md) {
+                font-size: 40px;
+            }
+
+            @include media-down(sm) {
+                font-size: 24px;
+            }
+        }
+    }
+
+    &__text {
+        max-width: 512px;
+        margin-left: 80px;
+        font-size: 30px;
+        line-height: 130%;
+
+        @include media-down(xl) {
+            max-width: 410px;
+            font-size: 24px;
+            margin-left: 30px;
+        }
+
+        @include media-down(lg) {
+            max-width: 350px;
+            margin-left: 10px;
+        }
+
+        @include media-down(md) {
+            max-width: 270px;
+            font-size: 22px;
+        }
+
+        @include media-down(sm) {
+            max-width: 320px;
+            font-size: 18px;
+        }
+    }
+}

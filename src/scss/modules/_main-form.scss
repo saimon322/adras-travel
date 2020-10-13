@@ -1,0 +1,170 @@
+.main-form {
+    margin-bottom: -212px;
+    padding-top: 60px;
+    background-color: $color-gray;
+
+    @include media-down(md) {
+        margin-bottom: -120px;
+        padding-top: 40px;
+    }
+
+    @include media-down(sm) {
+        margin-bottom: -60px;
+        padding-top: 30px;
+    }
+
+    &__container {
+        max-width: 100%;
+    }
+
+    &__content {
+        max-width: 1500px;
+        margin: 0 auto;
+        display: flex;
+
+        @include media-down(md) {
+            display: block;
+            border-radius: 25px;
+            box-shadow: $shadow;
+            background-color: #fff;
+        }
+    }
+
+    &__block {
+        width: 50%;
+        box-shadow: $shadow;
+        background-color: #fff;
+
+        @include media-down(lg) {
+            padding: 50px !important;
+        }
+
+        @include media-down(md) {
+            width: 100%;
+            box-shadow: none;
+            border-radius: 0 !important;
+            background-color: unset;
+        }
+
+        @include media-down(sm) {
+            padding: 30px 20px !important;
+        }
+
+        &:first-child {
+            position: relative;
+            border-radius: 25px 0px 0px 25px;
+            padding: 70px 50px 50px 100px;
+
+            @include media-down(md) {
+                padding-bottom: 25px !important;
+            }
+
+            @include media-down(sm) {
+                padding-bottom: 15px !important;
+            }
+        }
+
+        &:last-child {
+            border-radius: 0px 25px 25px 0px;
+            padding: 64px 64px 52px;
+
+            @include media-down(md) {
+                padding-top: 25px !important;
+            }
+
+            @include media-down(sm) {
+                padding-top: 15px !important;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        @include text24;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        border: 2px solid #000;
+        border-radius: 25px;
+        overflow: hidden;
+
+        @include media-down(sm) {
+            border-radius: 15px;
+        }
+    }
+
+    &__button {
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+    input, textarea {        
+        padding-left: 40px;
+        color: $color-text;
+        border-color: #000;
+
+        @include media-down(sm) {
+            padding-left: 20px;
+            font-size: 16px;
+        }
+
+        &:focus {
+            background-color: $color-gray;
+        }
+    }
+
+    input {
+        border-bottom: 2px solid;
+
+        @include media-up(md) {
+            width: 50%;
+
+            &:nth-child(odd) {
+                border-right: 2px solid;
+            }
+        }
+    }
+
+    textarea {
+        height: 193px;
+    
+        @include media-down(sm) {
+            height: 150px;
+        }
+    }
+
+    &--gray {
+        background-color: #fff;
+        
+        .main-form__block{
+            background: $color-gray;
+
+            @include media-down(md) {
+                background: none;
+            }
+        }
+
+        .main-form__content {
+            @include media-down(md) {
+                background: $color-gray;
+            }
+        }
+
+        .main-form__wrapper {
+            border-color: #fff;
+        }
+        
+        input, textarea {
+            border-color: #fff !important;
+
+            &:focus {
+                background-color: #fff !important;
+            }
+        }
+    }
+}

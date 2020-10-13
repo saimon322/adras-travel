@@ -1,0 +1,251 @@
+.tour-types {
+    overflow: hidden;
+    margin: 75px 0 220px;
+
+    @include media-down(xl) {
+        margin: 75px 0 180px;
+    }
+
+    @include media-down(lg) {
+        margin: 75px 0 150px;
+    }
+
+    @include media-down(md) {
+        margin: 50px 0 100px;
+    }
+
+    @include media-down(sm) {
+        margin: 40px 0 60px;
+    }
+
+    &__text {
+        @include text24;
+        line-height: 140%;
+    }
+
+    &__header {
+        padding-bottom: 5px;
+
+        @include media-down(lg) {
+            display: none;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    }
+}
+
+.tour-type {
+    border-top: 1px solid #000;
+
+    &:last-of-type {
+        border-bottom: 1px solid #000;
+    }
+
+    &__header {
+        height: 148px;
+        align-items: center;
+        cursor: pointer;
+
+        @include media-down(xl) {
+            height: 120px;
+        }
+
+        @include media-down(lg) {
+            height: auto;
+            align-items: flex-start;
+            padding: 30px 0;
+
+            .page-flex__left {
+                margin-bottom: 15px;
+            }
+        }
+
+        @include media-down(sm) {
+            padding: 20px 0;
+        }
+    }
+    
+    &__content {
+        flex-wrap: wrap;
+        padding: 64px 0 120px;
+
+        @include media-down(xl) {
+            padding: 24px 0 90px;
+        }
+
+        @include media-down(lg) {
+            padding: 40px 0 80px;
+        }
+
+        @include media-down(sm) {
+            padding: 40px 0 40px;
+        }
+    }
+
+    &__title {
+        @include media-up(xl) {
+            font-size: 50px;
+        }
+
+        @include media-up(xxl) {
+            font-size: 65px;
+        }
+
+        @include media-down(lg) {
+            padding-right: 200px;
+        }
+
+        @include media-down(sm) {
+            padding-right: 50px;
+        }
+    }
+
+    &__desc {
+        @include text24;
+        line-height: 130%;
+        transition: color .25s ease;
+        max-width: 396px;
+
+        @include media-down(lg) {
+            max-width: 100%;
+            padding-right: 0;
+
+            br {
+                display: none;
+            }
+        }
+    }
+
+    &__toggler {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 170px;
+        text-align: left;
+        justify-content: flex-start;
+        padding-left: 40px;
+        overflow: hidden;
+        background-color: $color-main;
+        border-color: transparent;
+        color: #fff;
+
+        @include media-down(lg) {
+            top: 30px;
+            transform: none;
+        }
+
+        @include media-down(sm) {
+            top: 19px;
+            width: 40px !important;
+            height: 40px;
+            padding: 0;
+
+            span {
+                display: none;
+            }
+        }
+
+        &:hover {
+            background-color: #00c566;
+        }
+    
+        &:active {
+            background-color: #02b55e;
+
+            svg {
+                transform: rotate(90deg) translateX(5px);
+            }
+        }
+
+        svg {
+            position: absolute;
+            top: 13px;
+            right: 23px;
+            transform: rotate(90deg);
+
+            @include media-down(sm) {
+                top: 12px;
+                right: 11.5px !important;
+            }
+        }
+    }
+
+    &__button {
+        padding: 0 20px;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 135px;
+        opacity: 0;
+        transform: translateY(20px);
+        visibility: hidden;
+
+        @include media-down(xl) {
+            top: 110px;
+        }
+
+        @include media-down(lg) {
+            top: auto;
+            bottom: -35px;
+        }
+
+        @include media-down(sm) {
+            bottom: -25px;
+        }
+    }
+
+    &__text {
+        @include text24;
+        line-height: 140%;
+    }
+
+    &__slider {
+        margin-top: 130px;
+
+        @include media-down(xl) {
+            margin-top: 80px;
+        }
+
+        @include media-down(lg) {
+            margin-top: 60px;
+        }
+
+        @include media-down(sm) {
+            margin-top: 40px;
+        }
+    }
+
+    &--active .tour-type {
+        &__desc {
+            color: $color-gray-1;
+        }
+
+        &__toggler {
+            width: 46px;
+            padding: 0;
+
+            span {
+                opacity: 0;
+                overflow: hidden;
+            }
+
+            svg {
+                transform: rotate(-90deg);
+                right: 12px;
+            }
+
+            &:active svg {
+                transform: rotate(-90deg) translateX(5px);
+            }
+        }
+
+        &__button {
+            opacity: 1;
+            transform: none;
+            visibility: visible;
+        }
+    }
+}

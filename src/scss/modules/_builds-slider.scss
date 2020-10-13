@@ -1,0 +1,138 @@
+.builds-slider {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    @include media-down(md) {
+        height: 800px;
+    }
+
+    @include media-down(sm) {
+        height: 650px;
+    }
+
+    @include media-down(xs) {
+        height: 550px;
+    }
+
+    .swiper-button {
+        color: $color-gray-1;
+
+        &:hover {
+            background-color: $color-hover-black;
+        }
+
+        &--prev {
+            left: 62px;
+
+            @include media-down(lg) {
+                left: 20px;
+            }
+
+            @include media-down(sm) {
+                left: 30px;
+            }
+
+            @include media-down(xs) {
+                left: 15px;
+            }
+        }
+
+        &--next {
+            right: 62px;
+
+            @include media-down(lg) {
+                right: 20px;
+            }
+
+            @include media-down(sm) {
+                right: 30px;
+            }
+
+            @include media-down(xs) {
+                right: 15px;
+            }
+        }
+    }
+
+    &--dark {
+        color: #fff;
+
+        p {
+            color: #fff;
+        }
+
+        .swiper-button {
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+}
+
+.builds-slide {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    &__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__header {
+        position: absolute;
+        top: 5%;
+        left: 0;
+        width: 100%;
+        padding: 0 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 0;
+        transform: translateY(-50px);
+        transition: .5s .25s ease;
+        transition-property: transform, opacity;
+        will-change: transform;
+    }
+
+    &__title {
+        color: #000;
+        margin-bottom: 10px;
+    }
+
+    &__label {
+        position: absolute;
+        bottom: 7%;
+        left: 0;
+        width: 100%;
+        padding: 0 30px;
+        text-align: center;
+        @include text24;
+        opacity: 0;
+        transform: translateY(50px);
+        transition: .25s .5s ease;
+        transition-property: transform, opacity;
+        will-change: transform;
+    }
+}
+
+
+
+.swiper-slide-active {
+    .builds-slide {
+        &__header,
+        &__label {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    } 
+}
+

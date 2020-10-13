@@ -1,0 +1,948 @@
+<%=_.template(require('../parts/main-header.html'))({
+    title: "Узбекистан | Adras Travel",
+    isWhite: true,
+    menu: {countries: "current-menu-item"}
+}) %>
+
+<main class="site-main">
+    <section class="page-header">
+        <div class="container page-flex">
+            <div class="page-flex__left">
+                <div class="breadcrumbs">
+                    <span><a href="#">Страны</a></span>
+                    <span>/</span>
+                    <span>Узбекистан</span>
+                </div>
+                <h1 class="page-header__title">Узбекистан</h1>
+                <a href="#" class="button button--opacity page-header__button" title="О странах">
+                    Туры
+                    <svg width="16" height="16">
+                        <use xlink:href="#icon-arrow-button"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="page-flex__right">
+                <p class="page-header__text">
+                    Страна в своем прошлом была расположена на Великом Шелковом пути и всегда была 
+                    плавильным котлом культур. Благодаря строительству исторических городов, Узбекистан 
+                    притягивает своей историей, архитектурой и традициями. В сочетании с тёплым узбекским 
+                    гостеприимством это делает визит в страну уникальным.
+                </p>
+            </div>
+        </div>
+    </section><!-- /.page-header -->
+
+    <section class="page-nav">
+        <div class="container">
+            <h2 class="visually-hidden">Список городов</h2>
+            <div class="page-nav__list">
+                <a href="#" class="page-nav__country">Узбекистан</a>
+                <ul class="page-nav__cities">
+                    <li><a href="#">Ташкент</a></li>
+                    <li><a href="#">Самарканд</a></li>
+                    <li><a href="#">Бухара</a></li>
+                    <li><a href="#">Хива</a></li>
+                    <li><a href="#">Андижан</a></li>
+                    <li><a href="#">Гиждуван</a></li>
+                    <li><a href="#">Карши</a></li>
+                    <li><a href="#">Коканд</a></li>
+                    <li><a href="#">Маргилан</a></li>
+                    <li><a href="#">Навои</a></li>
+                    <li><a href="#">Наманган</a></li>
+                    <li><a href="#">Нукус</a></li>
+                    <li><a href="#">Нурата</a></li>
+                    <li><a href="#">Риштан</a></li>
+                    <li><a href="#">Термез</a></li>
+                    <li><a href="#">Ургенч</a></li>
+                </ul>
+            </div>
+        </div>
+    </section><!-- /.page-nav -->
+
+    <section class="section section--auto-height section--padding-big">
+        <div class="section__flex">
+            <div class="section__block">
+                <div class="section__container">
+                    <h2 class="section__title">История и культура Узбекистана</h2>
+                    <p class="section__text">
+                        В 329 г. до н.э. территория была завоевана Александром Македонским и таким образом 
+                        попала под греческое влияние. С течением времени часть жителей обратились в буддизм, 
+                        пока эта область не была окончательно завоевана персами.
+                    </p>
+                </div>
+            </div>
+            <div class="section__block">
+                <picture class='section__img'>
+                    <source srcset='img/base/uzbekistan-map@1x.webp 1x,
+                                    img/base/uzbekistan-map@2x.webp 2x'
+                        type='image/webp'>
+                    <img src='img/base/uzbekistan-map/@1x.png'
+                        srcset='img/base/uzbekistan-map@1x.png 1x,
+                                img/base/uzbekistan-map@2x.png 2x'
+                        width='720'
+                        height='404'
+                        alt='Adras Travel'
+                        title='Adras Travel'>
+                </picture>
+            </div>
+        </div>
+    </section><!-- .section -->
+
+    <section class="section">
+        <div class="section__footer section__footer--gray">
+            <div class="container">
+                <div class="info-slider info-slider--gray js-slider" id="info-slider" data-loop="true" data-speed="500">
+                    <div class="swiper-slide info-slider__slide info-slide">
+                        <div class="info-slide__content">
+                            <div class="info-slide__title">+26-36°C</div>
+                            <p class="info-slide__text">
+                                Средняя температура воздуха летом (июнь-август). На юге страны может доходить до 41&#8209;42°C.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide info-slider__slide info-slide">
+                        <div class="info-slide__content">
+                            <div class="info-slide__title">+30-40°C</div>
+                            <p class="info-slide__text">
+                                Средняя температура воздуха летом (июнь-август). На юге страны может доходить до 41&#8209;42°C.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide info-slider__slide info-slide">
+                        <div class="info-slide__content">
+                            <div class="info-slide__title">+15-20°C</div>
+                            <p class="info-slide__text">
+                                Средняя температура воздуха летом (июнь-август). На юге страны может доходить до 41&#8209;42°C.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- /.section__footer -->
+
+        <div class="section__header">
+            <div class="section__flex">
+                <div class="section__block">
+                    <div class="section__container">
+                        <h2 class="section__title">
+                            Наши Туры<br> в Узбекистане
+                        </h2>
+                        <p class="section__text">
+                            Не упустите возможность познакомиться с&nbsp;Узбекистаном во всех его проявлениях.<br> 
+                            Ниже мы предлагаем Вам обзор самых популярных туров по Узбекистану. Мы придаем большое 
+                            значение разнообразию в турах: от экскурсионных до походных в горы Тянь-Шаня, а также 
+                            коротких туров по стране.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="section__block">
+                    <picture class='section__logo'>
+                        <source srcset='img/base/build-6@1x.webp 1x,
+                                        img/base/build-6@2x.webp 2x'
+                            type='image/webp'>
+                        <img src='img/base/build-6@1x.jpg'
+                            srcset='img/base/build-6@1x.jpg 1x,
+                                    img/base/build-6@2x.jpg 2x'
+                            width='940'
+                            height='733'
+                            alt='Adras Travel'
+                            title='Adras Travel'>
+                    </picture>
+                </div>
+            </div>
+        </div><!-- /.section__header -->
+    </section><!-- / .section -->
+
+    <section class="section section--bg--black mega-slider">
+        <div class="section__header">
+            <div class="mega-slider__main">
+                <div class="mega-slider__item mega-slide mega-slide--active" id="group-tours">
+                    <picture class="section__bg mega-slide__bg">
+                        <source srcset="img/base/group-tours-full@1x.webp 1920w,
+                                        img/base/group-tours-full@2x.webp 3840w" 
+                                sizes="100vw"
+                                type="image/webp">
+                        <img src="img/base/group-tours-full@1x.jpg" 
+                            srcset="img/base/group-tours-full@1x.jpg 1920w,
+                                    img/base/group-tours-full@2x.jpg 3840w"
+                            sizes="100vw"
+                            alt="Adras Travel" 
+                            title="Adras Travel">
+                    </picture>
+
+                    <div class="section__flex mega-slide__content">
+                        <div class="section__block">
+                            <div class="section__container">
+                                <h2 class="section__title mega-slide__title">Групповые</h2>
+                                <p class="section__text">
+                                    Туры рассчитаны на клиентов, предпочитающих путешествия в коллективе по четко продуманным 
+                                    и отработанным маршрутам, которые позволяют увидеть самое интересное при экономии денег 
+                                    и времени. Начало тура возможно в любой день недели минимум для 2 человек.
+                                </p>
+                                <a href="#" class="button button--opacity mega-slide__button" title="Подробнее">
+                                    Подробнее
+                                    <svg width="16" height="16">
+                                        <use xlink:href="#icon-arrow-button"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="section__block">
+                            <div class="mega-slide__slider">
+                                <div class="tours-slider js-slider" id="tours-slider-1" data-scrollBar="slider-scrollbar">
+                                    <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                        <picture class='tours-slide__bg'>
+                                            <source srcset='img/base/slider-1@1x.webp 1x,
+                                                            img/base/slider-1@2x.webp 2x'
+                                                type='image/webp'>
+                                            <img src='img/base/slider-1@1x.jpg'
+                                                srcset='img/base/slider-1@1x.jpg 1x,
+                                                        img/base/slider-1@2x.jpg 2x'
+                                                width='287'
+                                                height='448'
+                                                alt='Adras Travel'
+                                                title='Adras Travel'>
+                                        </picture>
+                                        <div class="tours-slide__price">$1299</div>
+                                        <div class="tours-slide__content">
+                                            <div class="tours-slide__type">Городской тур</div>
+                                            <h3 class="tours-slide__title">Лучшее узбекистана</h3>
+                                            <div class="tours-slide__time">10 дней / 9 ночей</div>
+                                        </div>
+                                        <div class="tours-slide__arrow">
+                                            <svg width='30' height='30'>
+                                                <use xlink:href='#icon-arrow-link'></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                        <picture class='tours-slide__bg'>
+                                            <source srcset='img/base/slider-2@1x.webp 1x,
+                                                            img/base/slider-2@2x.webp 2x'
+                                                type='image/webp'>
+                                            <img src='img/base/slider-2@1x.jpg'
+                                                srcset='img/base/slider-2@1x.jpg 1x,
+                                                        img/base/slider-2@2x.jpg 2x'
+                                                width='287'
+                                                height='448'
+                                                alt='Adras Travel'
+                                                title='Adras Travel'>
+                                        </picture>
+                                        <div class="tours-slide__price">$999</div>
+                                        <div class="tours-slide__content">
+                                            <div class="tours-slide__type">Короткий тур</div>
+                                            <h3 class="tours-slide__title">Романтика Ташкента</h3>
+                                            <div class="tours-slide__time">3 дня / 2 ночи</div>
+                                        </div>
+                                        <div class="tours-slide__arrow">
+                                            <svg width='30' height='30'>
+                                                <use xlink:href='#icon-arrow-link'></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                        <picture class='tours-slide__bg'>
+                                            <source srcset='img/base/slider-3@1x.webp 1x,
+                                                            img/base/slider-3@2x.webp 2x'
+                                                type='image/webp'>
+                                            <img src='img/base/slider-3@1x.jpg'
+                                                srcset='img/base/slider-3@1x.jpg 1x,
+                                                        img/base/slider-3@2x.jpg 2x'
+                                                width='287'
+                                                height='448'
+                                                alt='Adras Travel'
+                                                title='Adras Travel'>
+                                        </picture>
+                                        <div class="tours-slide__price">$1999</div>
+                                        <div class="tours-slide__content">
+                                            <div class="tours-slide__type">Городской тур</div>
+                                            <h3 class="tours-slide__title">Тайны старого города</h3>
+                                            <div class="tours-slide__time">7 дней / 6 ночей</div>
+                                        </div>
+                                        <div class="tours-slide__arrow">
+                                            <svg width='30' height='30'>
+                                                <use xlink:href='#icon-arrow-link'></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                        <picture class='tours-slide__bg'>
+                                            <source srcset='img/base/slider-12@1x.webp 1x,
+                                                            img/base/slider-12@2x.webp 2x'
+                                                type='image/webp'>
+                                            <img src='img/base/slider-12@1x.jpg'
+                                                srcset='img/base/slider-12@1x.jpg 1x,
+                                                        img/base/slider-12@2x.jpg 2x'
+                                                width='287'
+                                                height='448'
+                                                alt='Adras Travel'
+                                                title='Adras Travel'>
+                                        </picture>
+                                        <div class="tours-slide__price">$999</div>
+                                        <div class="tours-slide__content">
+                                            <div class="tours-slide__type">Групповой тур</div>
+                                            <h3 class="tours-slide__title">Дарваза Гас Кратер</h3>
+                                            <div class="tours-slide__time">2 дня / 1 ночь</div>
+                                        </div>
+                                        <div class="tours-slide__arrow">
+                                            <svg width='30' height='30'>
+                                                <use xlink:href='#icon-arrow-link'></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    
+                                    <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                        <picture class='tours-slide__bg'>
+                                            <source srcset='img/base/slider-1@1x.webp 1x,
+                                                            img/base/slider-1@2x.webp 2x'
+                                                type='image/webp'>
+                                            <img src='img/base/slider-1@1x.jpg'
+                                                srcset='img/base/slider-1@1x.jpg 1x,
+                                                        img/base/slider-1@2x.jpg 2x'
+                                                width='287'
+                                                height='448'
+                                                alt='Adras Travel'
+                                                title='Adras Travel'>
+                                        </picture>
+                                        <div class="tours-slide__price">$1299</div>
+                                        <div class="tours-slide__content">
+                                            <div class="tours-slide__type">Городской тур</div>
+                                            <h3 class="tours-slide__title">Лучшее Узбекистана</h3>
+                                            <div class="tours-slide__time">10 дней / 9 ночей</div>
+                                        </div>
+                                        <div class="tours-slide__arrow">
+                                            <svg width='30' height='30'>
+                                                <use xlink:href='#icon-arrow-link'></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                        <picture class='tours-slide__bg'>
+                                            <source srcset='img/base/slider-2@1x.webp 1x,
+                                                            img/base/slider-2@2x.webp 2x'
+                                                type='image/webp'>
+                                            <img src='img/base/slider-2@1x.jpg'
+                                                srcset='img/base/slider-2@1x.jpg 1x,
+                                                        img/base/slider-2@2x.jpg 2x'
+                                                width='287'
+                                                height='448'
+                                                alt='Adras Travel'
+                                                title='Adras Travel'>
+                                        </picture>
+                                        <div class="tours-slide__price">$999</div>
+                                        <div class="tours-slide__content">
+                                            <div class="tours-slide__type">Короткий тур</div>
+                                            <h3 class="tours-slide__title">Романтика Ташкента</h3>
+                                            <div class="tours-slide__time">3 дня / 2 ночи</div>
+                                        </div>
+                                        <div class="tours-slide__arrow">
+                                            <svg width='30' height='30'>
+                                                <use xlink:href='#icon-arrow-link'></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    
+                                    <div class="tours-slider__scrollbar slider-scrollbar"></div>
+                                </div><!-- /.tours-slider -->
+                            </div><!-- /.countty__slider -->
+                        </div>
+                    </div>
+                </div><!-- /.mega-slide -->
+                
+                <div class="mega-slider__item mega-slide" id="hiking-tours">
+                    <picture class="section__bg mega-slide__bg">
+                        <source srcset="img/base/hiking-tours-full@1x.webp 1920w,
+                                        img/base/hiking-tours-full@2x.webp 3840w" 
+                                sizes="100vw"
+                                type="image/webp">
+                        <img src="img/base/hiking-tours-full@1x.jpg" 
+                            srcset="img/base/hiking-tours-full@1x.jpg 1920w,
+                                    img/base/hiking-tours-full@2x.jpg 3840w"
+                            sizes="100vw"
+                            alt="Adras Travel" 
+                            title="Adras Travel">
+                    </picture>
+
+                    <div class="section__flex mega-slide__content">
+                        <div class="section__block">
+                            <div class="section__container">
+                                <h2 class="section__title mega-slide__title">Походные туры</h2>
+                                <p class="section__text">
+                                    Туры рассчитаны на клиентов, предпочитающих путешествия в коллективе по четко продуманным 
+                                    и отработанным маршрутам, которые позволяют увидеть самое интересное при экономии денег 
+                                    и времени. Начало тура возможно в любой день недели минимум для 2 человек.
+                                </p>
+                                <a href="#" class="button button--opacity mega-slide__button" title="Подробнее">
+                                    Подробнее
+                                    <svg width="16" height="16">
+                                        <use xlink:href="#icon-arrow-button"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="section__block">                            
+                            <div class="mega-slide__slider">
+                                <div class="tours-slider js-slider" id="tours-slider-2" data-scrollBar="slider-scrollbar">
+                                    <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                        <picture class='tours-slide__bg'>
+                                            <source srcset='img/base/slider-2@1x.webp 1x,
+                                                            img/base/slider-2@2x.webp 2x'
+                                                type='image/webp'>
+                                            <img src='img/base/slider-2@1x.jpg'
+                                                srcset='img/base/slider-2@1x.jpg 1x,
+                                                        img/base/slider-2@2x.jpg 2x'
+                                                width='287'
+                                                height='448'
+                                                alt='Adras Travel'
+                                                title='Adras Travel'>
+                                        </picture>
+                                        <div class="tours-slide__price">$999</div>
+                                        <div class="tours-slide__content">
+                                            <div class="tours-slide__type">Короткий тур</div>
+                                            <h3 class="tours-slide__title">Романтика Бишкека</h3>
+                                            <div class="tours-slide__time">3 дня / 2 ночи</div>
+                                        </div>
+                                        <div class="tours-slide__arrow">
+                                            <svg width='30' height='30'>
+                                                <use xlink:href='#icon-arrow-link'></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                        <picture class='tours-slide__bg'>
+                                            <source srcset='img/base/slider-1@1x.webp 1x,
+                                                            img/base/slider-1@2x.webp 2x'
+                                                type='image/webp'>
+                                            <img src='img/base/slider-1@1x.jpg'
+                                                srcset='img/base/slider-1@1x.jpg 1x,
+                                                        img/base/slider-1@2x.jpg 2x'
+                                                width='287'
+                                                height='448'
+                                                alt='Adras Travel'
+                                                title='Adras Travel'>
+                                        </picture>
+                                        <div class="tours-slide__price">$1299</div>
+                                        <div class="tours-slide__content">
+                                            <div class="tours-slide__type">Городской тур</div>
+                                            <h3 class="tours-slide__title">Лучшее Кыргызстана</h3>
+                                            <div class="tours-slide__time">10 дней / 9 ночей</div>
+                                        </div>
+                                        <div class="tours-slide__arrow">
+                                            <svg width='30' height='30'>
+                                                <use xlink:href='#icon-arrow-link'></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                        <picture class='tours-slide__bg'>
+                                            <source srcset='img/base/slider-3@1x.webp 1x,
+                                                            img/base/slider-3@2x.webp 2x'
+                                                type='image/webp'>
+                                            <img src='img/base/slider-3@1x.jpg'
+                                                srcset='img/base/slider-3@1x.jpg 1x,
+                                                        img/base/slider-3@2x.jpg 2x'
+                                                width='287'
+                                                height='448'
+                                                alt='Adras Travel'
+                                                title='Adras Travel'>
+                                        </picture>
+                                        <div class="tours-slide__price">$1999</div>
+                                        <div class="tours-slide__content">
+                                            <div class="tours-slide__type">Городской тур</div>
+                                            <h3 class="tours-slide__title">Тайны старого города</h3>
+                                            <div class="tours-slide__time">7 дней / 6 ночей</div>
+                                        </div>
+                                        <div class="tours-slide__arrow">
+                                            <svg width='30' height='30'>
+                                                <use xlink:href='#icon-arrow-link'></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    
+                                    <div class="tours-slider__scrollbar slider-scrollbar"></div>
+                                </div><!-- /.tours-slider -->
+                            </div><!-- /.countty__slider -->
+                        </div>
+                    </div>
+                </div><!-- /.mega-slide -->
+                
+                <div class="mega-slider__item mega-slide" id="city-tours">
+                    <picture class="section__bg mega-slide__bg">
+                        <source srcset="img/base/city-tours-full@1x.webp 1920w,
+                                        img/base/city-tours-full@2x.webp 3840w" 
+                                sizes="100vw"
+                                type="image/webp">
+                        <img src="img/base/city-tours-full@1x.jpg" 
+                            srcset="img/base/city-tours-full@1x.jpg 1920w,
+                                    img/base/city-tours-full@2x.jpg 3840w"
+                            sizes="100vw"
+                            alt="Adras Travel" 
+                            title="Adras Travel">
+                    </picture>
+
+                    <div class="section__flex mega-slide__content">
+                        <div class="section__block">
+                            <div class="section__container">
+                                <h2 class="section__title mega-slide__title">Городские туры</h2>
+                                <p class="section__text">
+                                    Туры рассчитаны на клиентов, предпочитающих путешествия в коллективе по четко продуманным 
+                                    и отработанным маршрутам, которые позволяют увидеть самое интересное при экономии денег 
+                                    и времени. Начало тура возможно в любой день недели минимум для 2 человек.
+                                </p>
+                                <a href="#" class="button button--opacity mega-slide__button" title="Подробнее">
+                                    Подробнее
+                                    <svg width="16" height="16">
+                                        <use xlink:href="#icon-arrow-button"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="section__block">                            
+                            <div class="mega-slide__slider">
+                                <div class="tours-slider js-slider" id="tours-slider-3" data-scrollBar="slider-scrollbar">
+                                    <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                        <picture class='tours-slide__bg'>
+                                            <source srcset='img/base/slider-3@1x.webp 1x,
+                                                            img/base/slider-3@2x.webp 2x'
+                                                type='image/webp'>
+                                            <img src='img/base/slider-3@1x.jpg'
+                                                srcset='img/base/slider-3@1x.jpg 1x,
+                                                        img/base/slider-3@2x.jpg 2x'
+                                                width='287'
+                                                height='448'
+                                                alt='Adras Travel'
+                                                title='Adras Travel'>
+                                        </picture>
+                                        <div class="tours-slide__price">$1999</div>
+                                        <div class="tours-slide__content">
+                                            <div class="tours-slide__type">Городской тур</div>
+                                            <h3 class="tours-slide__title">Тайны старого города</h3>
+                                            <div class="tours-slide__time">7 дней / 6 ночей</div>
+                                        </div>
+                                        <div class="tours-slide__arrow">
+                                            <svg width='30' height='30'>
+                                                <use xlink:href='#icon-arrow-link'></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+
+                                    <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                        <picture class='tours-slide__bg'>
+                                            <source srcset='img/base/slider-2@1x.webp 1x,
+                                                            img/base/slider-2@2x.webp 2x'
+                                                type='image/webp'>
+                                            <img src='img/base/slider-2@1x.jpg'
+                                                srcset='img/base/slider-2@1x.jpg 1x,
+                                                        img/base/slider-2@2x.jpg 2x'
+                                                width='287'
+                                                height='448'
+                                                alt='Adras Travel'
+                                                title='Adras Travel'>
+                                        </picture>
+                                        <div class="tours-slide__price">$999</div>
+                                        <div class="tours-slide__content">
+                                            <div class="tours-slide__type">Короткий тур</div>
+                                            <h3 class="tours-slide__title">Романтика Нур-Султана</h3>
+                                            <div class="tours-slide__time">3 дня / 2 ночи</div>
+                                        </div>
+                                        <div class="tours-slide__arrow">
+                                            <svg width='30' height='30'>
+                                                <use xlink:href='#icon-arrow-link'></use>
+                                            </svg>
+                                        </div>
+                                    </a>
+                                    
+                                    <div class="tours-slider__scrollbar slider-scrollbar"></div>
+                                </div><!-- /.tours-slider -->
+                            </div><!-- /.countty__slider -->
+                        </div>
+                    </div>
+                </div><!-- /.mega-slide -->
+                
+                <div class="mega-slider__item mega-slide" id="short-tours">
+                    <picture class="section__bg mega-slide__bg">
+                        <source srcset="img/base/tajikistan-full@1x.webp 1920w,
+                                        img/base/tajikistan-full@2x.webp 3840w" 
+                                sizes="100vw"
+                                type="image/webp">
+                        <img src="img/base/tajikistan-full@1x.jpg" 
+                            srcset="img/base/tajikistan-full@1x.jpg 1920w,
+                                    img/base/tajikistan-full@2x.jpg 3840w"
+                            sizes="100vw"
+                            alt="Adras Travel" 
+                            title="Adras Travel">
+                    </picture>
+
+                    <div class="section__flex mega-slide__content">
+                        <div class="section__block">
+                            <div class="section__container">
+                                <h2 class="section__title mega-slide__title">Короткие туры</h2>
+                                <p class="section__text">
+                                    Туры рассчитаны на клиентов, предпочитающих путешествия в коллективе по четко продуманным 
+                                    и отработанным маршрутам, которые позволяют увидеть самое интересное при экономии денег 
+                                    и времени. Начало тура возможно в любой день недели минимум для 2 человек.
+                                </p>
+                                <a href="#" class="button button--opacity mega-slide__button" title="Подробнее">
+                                    Подробнее
+                                    <svg width="16" height="16">
+                                        <use xlink:href="#icon-arrow-button"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.mega-slide -->
+                
+                <div class="mega-slider__item mega-slide" id="personal-tours">
+                    <picture class="section__bg mega-slide__bg">
+                        <source srcset="img/base/turkmenistan-full@1x.webp 1920w,
+                                        img/base/turkmenistan-full@2x.webp 3840w" 
+                                sizes="100vw"
+                                type="image/webp">
+                        <img src="img/base/turkmenistan-full@1x.jpg" 
+                            srcset="img/base/turkmenistan-full@1x.jpg 1920w,
+                                    img/base/turkmenistan-full@2x.jpg 3840w"
+                            sizes="100vw"
+                            alt="Adras Travel" 
+                            title="Adras Travel">
+                    </picture>
+
+                    <div class="section__flex mega-slide__content">
+                        <div class="section__block">
+                        </div>
+
+                        <div class="section__block">
+                            <div class="section__container">
+                                <h2 class="section__title mega-slide__title">Персональные туры</h2>
+                                <p class="section__text">
+                                    Туры рассчитаны на клиентов, предпочитающих путешествия в коллективе по четко продуманным 
+                                    и отработанным маршрутам.
+                                </p>
+                                <a href="#" class="button button--opacity mega-slide__button" title="Подробнее">
+                                    Подробнее
+                                    <svg width="16" height="16">
+                                        <use xlink:href="#icon-arrow-button"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /.mega-slide -->
+            </div>
+        </div><!-- /.section__header -->
+
+        <div class="section__footer section__footer--black">
+            <div class="mega-slider-nav">
+                <a href="#group-tours" class="swiper-slide mega-slider-nav__item mega-slide-link mega-slide-link--active">
+                    <div class="mega-slide-link__logo">
+                        <picture class='mega-slide-link__img'>
+                            <source srcset='img/base/group-tours-link@1x.webp 1x,
+                                            img/base/group-tours-link@2x.webp 2x'
+                                type='image/webp'>
+                            <img src='img/base/group-tours-link@1x.jpg'
+                                srcset='img/base/group-tours-link@1x.jpg 1x,
+                                        img/base/group-tours-link@2x.jpg 2x'
+                                width='129'
+                                height='129'
+                                alt='Adras Travel'
+                                title='Adras Travel'>
+                        </picture>
+                    </div>
+                    <div class="mega-slide-link__subtitle">Групповые туры</div>
+                </a><!-- /.mega-slide-link -->
+
+                <a href="#hiking-tours" class="swiper-slide mega-slider-nav__item mega-slide-link">
+                    <div class="mega-slide-link__logo">
+                        <picture class='mega-slide-link__img'>
+                            <source srcset='img/base/hiking-tours-link@1x.webp 1x,
+                                            img/base/hiking-tours-link@2x.webp 2x'
+                                type='image/webp'>
+                            <img src='img/base/hiking-tours-link@1x.jpg'
+                                srcset='img/base/hiking-tours-link@1x.jpg 1x,
+                                        img/base/hiking-tours-link@2x.jpg 2x'
+                                width='129'
+                                height='129'
+                                alt='Adras Travel'
+                                title='Adras Travel'>
+                        </picture>
+                    </div>
+                    <div class="mega-slide-link__subtitle">Походные туры</div>
+                </a><!-- /.mega-slide-link -->
+
+                <a href="#city-tours" class="swiper-slide mega-slider-nav__item mega-slide-link">
+                    <div class="mega-slide-link__logo">
+                        <picture class='mega-slide-link__img'>
+                            <source srcset='img/base/city-tours-link@1x.webp 1x,
+                                            img/base/city-tours-link@2x.webp 2x'
+                                type='image/webp'>
+                            <img src='img/base/city-tours-link@1x.jpg'
+                                srcset='img/base/city-tours-link@1x.jpg 1x,
+                                        img/base/city-tours-link@2x.jpg 2x'
+                                width='129'
+                                height='129'
+                                alt='Adras Travel'
+                                title='Adras Travel'>
+                        </picture>
+                    </div>
+                    <div class="mega-slide-link__subtitle">Городские туры</div>
+                </a><!-- /.mega-slide-link -->
+
+                <a href="#short-tours" class="swiper-slide mega-slider-nav__item mega-slide-link">
+                    <div class="mega-slide-link__logo">
+                        <picture class='mega-slide-link__img'>
+                            <source srcset='img/base/tajikistan-link@1x.webp 1x,
+                                            img/base/tajikistan-link@2x.webp 2x'
+                                type='image/webp'>
+                            <img src='img/base/tajikistan-link@1x.jpg'
+                                srcset='img/base/tajikistan-link@1x.jpg 1x,
+                                        img/base/tajikistan-link@2x.jpg 2x'
+                                width='129'
+                                height='129'
+                                alt='Adras Travel'
+                                title='Adras Travel'>
+                        </picture>
+                    </div>
+                    <div class="mega-slide-link__subtitle">Короткие туры</div>
+                </a><!-- /.mega-slide-link -->
+
+                <a href="#personal-tours" class="swiper-slide mega-slider-nav__item mega-slide-link">
+                    <div class="mega-slide-link__logo">
+                        <picture class='mega-slide-link__img'>
+                            <source srcset='img/base/turkmenistan-link@1x.webp 1x,
+                                            img/base/turkmenistan-link@2x.webp 2x'
+                                type='image/webp'>
+                            <img src='img/base/turkmenistan-link@1x.jpg'
+                                srcset='img/base/turkmenistan-link@1x.jpg 1x,
+                                        img/base/turkmenistan-link@2x.jpg 2x'
+                                width='129'
+                                height='129'
+                                alt='Adras Travel'
+                                title='Adras Travel'>
+                        </picture>
+                    </div>
+                    <div class="mega-slide-link__subtitle">Персональные туры</div>
+                </a><!-- /.mega-slide-link -->
+            </div><!-- /.mega-slider-nav -->
+        </div><!-- /.section__footer -->
+    </section><!-- / .mega-slider -->
+
+    <section class="section section--bg--black articles">
+        <div class="articles__container container">
+            <div class="articles__header page-flex">
+                <div class="page-flex__left">
+                    <h2>Узнайте больше об&nbsp;Узбекистане</h2>
+                </div>
+                <div class="page-flex__right">
+                    <p class="text24">
+                        Мы будем рады поделиться с вами нашими знаниями. Ниже вы найдете не только 
+                        информацию о визовых требованиях, но и много информации о географии, истории, 
+                        культуре, традициях и известных личностях Узбекистана.
+                    </p>
+                </div>
+            </div><!-- /.articles__header -->
+
+            <div class="articles__main">
+                <div class="articles-slider js-slider" id="articles-slider">
+                    <div class="swiper-slide articles-slider__slide articles-slide">
+                        <a href="#" class="articles-slide__card">
+                            <picture class='articles-slide__bg'>
+                                <source srcset='img/base/slider-8@1x.webp 1x,
+                                                img/base/slider-8@2x.webp 2x'
+                                    type='image/webp'>
+                                <img src='img/base/slider-8@1x.jpg'
+                                    srcset='img/base/slider-8@1x.jpg 1x,
+                                            img/base/slider-8@2x.jpg 2x'
+                                    width='287'
+                                    height='448'
+                                    alt='Adras Travel'
+                                    title='Adras Travel'>
+                            </picture>
+                            <div class="articles-slide__content">
+                                <div class="articles-slide__type">Гастрономический блог</div>
+                                <h3 class="articles-slide__title">Король узбекской кухни</h3>
+                                <div class="articles-slide__text">Где попробовать самое вкусное традиционное узбекское блюдо.</div>
+                            </div>
+                        </a>
+                        <a href="#" class="button button--opacity articles-slide__button">
+                            Читать
+                            <svg width="16" height="16">
+                                <use xlink:href="#icon-arrow-button"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="swiper-slide articles-slider__slide articles-slide">
+                        <a href="#" class="articles-slide__card">
+                            <picture class='articles-slide__bg'>
+                                <source srcset='img/base/slider-9@1x.webp 1x,
+                                                img/base/slider-9@2x.webp 2x'
+                                    type='image/webp'>
+                                <img src='img/base/slider-9@1x.jpg'
+                                    srcset='img/base/slider-9@1x.jpg 1x,
+                                            img/base/slider-9@2x.jpg 2x'
+                                    width='287'
+                                    height='448'
+                                    alt='Adras Travel'
+                                    title='Adras Travel'>
+                            </picture>
+                            <div class="articles-slide__content">
+                                <div class="articles-slide__type">Блог о путешествиях</div>
+                                <h3 class="articles-slide__title">Жаркое лето холодная зима</h3>
+                                <div class="articles-slide__text">Когда лучше ехать в Узбекистан: рассказываем о погоде и климате.</div>
+                            </div>
+                        </a>
+                        <a href="#" class="button button--opacity articles-slide__button">
+                            Читать
+                            <svg width="16" height="16">
+                                <use xlink:href="#icon-arrow-button"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="swiper-slide articles-slider__slide articles-slide">
+                        <a href="#" class="articles-slide__card">
+                            <picture class='articles-slide__bg'>
+                                <source srcset='img/base/slider-10@1x.webp 1x,
+                                                img/base/slider-10@2x.webp 2x'
+                                    type='image/webp'>
+                                <img src='img/base/slider-10@1x.jpg'
+                                    srcset='img/base/slider-10@1x.jpg 1x,
+                                            img/base/slider-10@2x.jpg 2x'
+                                    width='287'
+                                    height='448'
+                                    alt='Adras Travel'
+                                    title='Adras Travel'>
+                            </picture>
+                            <div class="articles-slide__content">
+                                <div class="articles-slide__type">Блог о путешествиях</div>
+                                <h3 class="articles-slide__title">10 мест в&nbsp;узбекистане</h3>
+                                <div class="articles-slide__text">Что посмотреть в Узбекистане за&nbsp;5&nbsp;дней, неделю, месяц.</div>
+                            </div>
+                        </a>
+                        <a href="#" class="button button--opacity articles-slide__button">
+                            Читать
+                            <svg width="16" height="16">
+                                <use xlink:href="#icon-arrow-button"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="swiper-slide articles-slider__slide articles-slide">
+                        <a href="#" class="articles-slide__card">
+                            <picture class='articles-slide__bg'>
+                                <source srcset='img/base/slider-14@1x.webp 1x,
+                                                img/base/slider-14@2x.webp 2x'
+                                    type='image/webp'>
+                                <img src='img/base/slider-14@1x.jpg'
+                                    srcset='img/base/slider-14@1x.jpg 1x,
+                                            img/base/slider-14@2x.jpg 2x'
+                                    width='287'
+                                    height='448'
+                                    alt='Adras Travel'
+                                    title='Adras Travel'>
+                            </picture>
+                            <div class="articles-slide__content">
+                                <div class="articles-slide__type">Блог о путешествиях</div>
+                                <h3 class="articles-slide__title">Культура Узбекистана</h3>
+                                <div class="articles-slide__text">Традиции и обычаи в узбекской культуре и истории.</div>
+                            </div>
+                        </a>
+                        <a href="#" class="button button--opacity articles-slide__button">
+                            Читать
+                            <svg width="16" height="16">
+                                <use xlink:href="#icon-arrow-button"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <div class="swiper-slide articles-slider__slide articles-slide">
+                        <a href="#" class="articles-slide__card">
+                            <picture class='articles-slide__bg'>
+                                <source srcset='img/base/slider-4@1x.webp 1x,
+                                                img/base/slider-4@2x.webp 2x'
+                                    type='image/webp'>
+                                <img src='img/base/slider-4@1x.jpg'
+                                    srcset='img/base/slider-4@1x.jpg 1x,
+                                            img/base/slider-4@2x.jpg 2x'
+                                    width='287'
+                                    height='448'
+                                    alt='Adras Travel'
+                                    title='Adras Travel'>
+                            </picture>
+                            <div class="articles-slide__content">
+                                <div class="articles-slide__type">Блог о путешествиях</div>
+                                <h3 class="articles-slide__title">Великий шелковый путь</h3>
+                                <div class="articles-slide__text">Караванная дорога из Китая в&nbsp;страны Азии длиной в 7000 км.</div>
+                            </div>
+                        </a>
+                        <a href="#" class="button button--opacity articles-slide__button">
+                            Читать
+                            <svg width="16" height="16">
+                                <use xlink:href="#icon-arrow-button"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div><!-- /.articles-slider -->
+                
+                <a href="#" class="button articles__button" title="Больше статей">Больше статей</a>
+            </div><!-- /.articles__main -->
+        </div>
+    </section><!-- / .articles -->
+
+    <section class="info-cards">
+        <div class="container info-cards__container">
+            <div class="info-cards__list">
+                <div class="info-cards__item info-card">
+                    <div class="info-card__content">
+                        <h4 class="info-card__title">Полезная информация для&nbsp;путешествий</h4>
+                    </div>
+                </div>
+                <div class="info-cards__item info-card">
+                    <div class="info-card__content">
+                        <h4 class="info-card__title">Документы, виза</h4>
+                        <p class="info-card__text">
+                            Список документов, подача заявления в&nbsp;Консульство и др.
+                        </p>
+                    </div>
+                    <a href="#" class="button button--shadow info-card__button">Читать</a>
+                </div>
+                <div class="info-cards__item info-card">
+                    <div class="info-card__content">
+                        <h4 class="info-card__title">Оплата туров</h4>
+                        <p class="info-card__text">
+                            Правила и способы оплаты туров, рассчёт поездки.
+                        </p>
+                    </div>
+                    <a href="#" class="button button--shadow info-card__button">Читать</a>
+                </div>
+                <div class="info-cards__item info-card">
+                    <div class="info-card__content">
+                        <h4 class="info-card__title">Бронирование</h4>
+                        <p class="info-card__text">
+                            Подтверждение брони, лист ожидания, отказ.
+                        </p>
+                    </div>
+                    <a href="#" class="button button--shadow info-card__button">Читать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <%=_.template(require('../parts/faq.html'))() %>
+</main><!-- / .site-main -->
+
+<%=_.template(require('../parts/main-form.html'))({
+    isGray: true
+}) %>
+
+<%=_.template(require('../parts/main-footer.html'))() %>

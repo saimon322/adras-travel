@@ -2,17 +2,18 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 5;
+    z-index: 1;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
     opacity: 0;
-    visibility: hidden;
-    transition: all .5s ease-out;
+    pointer-events: none;
+    transition: opacity .5s;
+    will-change: transform;
+    transform: translateZ(0);
 }
 
 .show-dropdown-nav .site-backdrop {
     opacity: 1;
-    visibility: visible;
 }

@@ -1,0 +1,50 @@
+.tour-housing {
+    margin-top: 75px;
+    padding: 15px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+
+    @include media-down(xl) {
+        margin-top: 60px;
+    }
+
+    @include media-down(sm) {
+        margin-top: 40px;
+        padding: 10px 0;
+    }
+
+    .page-flex {
+        @include media-down(lg) {
+            display: flex;
+        }
+
+        @include media-down(sm) {
+            display: block;
+        }
+    }
+
+    .page-flex__left {
+        @include media-down(lg) {
+            width: 220px;
+            margin-bottom: 0;
+        }
+
+        @include media-down(sm) {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__item {
+        padding: 10px 0;
+        align-items: center;
+    }
+
+    &__hotels {
+        @include text24;
+
+        a {
+            color: $color-main;
+        }
+    }
+}

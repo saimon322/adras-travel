@@ -1,0 +1,255 @@
+.tours {
+    padding-bottom: 50px; 
+
+    @include media-down(xl) {
+        padding-bottom: 40px;
+    }
+
+    @include media-down(sm) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 30px;
+    }
+
+    &__button {
+        margin-top: 54px;
+
+        @include media-down(xl) {
+            margin-top: 30px;
+        }
+
+        @include media-down(sm) {
+            margin-top: 10px;
+        }
+    }
+
+    &--white {
+        .tour {
+            background: #fff;
+
+            &__duration {
+                background: $color-gray;
+            }
+        }
+    }
+}
+
+.tour {
+    background: $color-gray;
+    box-shadow: $shadow-slide;
+    border-radius: 25px;
+    display: flex;
+    transition: box-shadow .25s ease;
+    position: relative;
+    margin-bottom: 30px;
+
+    @include media-down(sm) {
+        display: block;
+        border-radius: 15px;
+    }
+
+    &:hover {
+        box-shadow: none;
+    }
+
+    &__country {
+        position: absolute;
+        z-index: 1;
+        top: 23px;
+        left: 29px;
+        width: 141px;
+        height: 33px;
+        background: #FFFFFF;
+        box-shadow: $shadow-tour;
+        border-radius: 40px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 110%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        @include media-down(sm) {
+            left: 15px;
+            top: 15px;
+        }
+    }
+
+    &__logo {
+        display: block;
+        width: 394px;
+        border-radius: 25px;
+        box-shadow: $shadow-slide;
+        overflow: hidden;
+
+        &:hover img {
+            transform: scale(1.1);
+        }
+
+        @include media-down(xl) {
+            width: 300px;
+        }
+
+        @include media-down(md) {
+            width: 280px;
+        }
+
+        @include media-down(sm) {
+            width: 100%;
+            height: 300px;
+            border-radius: 15px 15px 0 0;
+            box-shadow: none;
+        }
+
+        @include media-down(xs) {
+            height: 200px;
+        }
+
+        picture {
+            width: 100%;
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform .5s ease;
+        }
+    }
+
+    &__content {
+        flex: 1 1 0;
+        padding: 45px 68px 40px 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include media-down(xl) {
+            padding: 35px 40px 35px 60px;
+        }
+
+        @include media-down(md) {
+            padding: 30px 30px 30px 35px;
+        }
+
+        @include media-down(sm) {
+            padding: 25px 20px;
+        }
+    }
+
+    &__type {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 140%;
+    }
+
+    &__title {
+        display: block;
+        margin-bottom: 5px;
+        transition: color .2s ease;
+        width: fit-content;
+
+        &:hover {
+            color: $color-main;
+        }
+    }
+
+    &__places {
+        color: $color-gray-1;
+        font-weight: 700;
+    }
+
+    &__text {
+        margin: 10px 0 30px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    &__info {
+        display: flex;
+    }
+
+    &__price {
+        background: #000;
+        box-shadow: $shadow-tour;
+        border-radius: 40px;
+        width: 109px;
+        height: 33px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $color-gray;
+        font-weight: bold;
+        margin-right: 11px;
+
+        @include media-down(sm) {
+            width: 80px;
+        }
+    }
+
+    &__duration {
+        background: #fff;
+        box-shadow: $shadow-tour;
+        border-radius: 40px;
+        height: 33px;
+        padding: 0 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $font-2;
+        font-size: 14px;
+        text-transform: uppercase;
+
+        @include media-down(sm) {
+            padding: 0 15px;
+        }
+    }
+
+    &__arrow {
+        color: $color-main;
+        border: 2px solid $color-main;
+        border-radius: 40px;
+        width: 60px;
+        height: 33px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color .25s ease;
+
+        @include media-down(sm) {
+            display: none;
+        }
+
+        &:hover {
+            background-color: $color-hover-black;
+        }
+
+        &:active svg {
+            transform: translateX(5px);
+        }
+
+        svg {
+            transition: transform .25s ease;
+        }
+    }
+
+    &__link {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        
+        @include media-up(lg) {
+            display: none;
+        }
+    }
+}

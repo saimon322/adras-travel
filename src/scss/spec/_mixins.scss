@@ -72,3 +72,118 @@
         @include media-down($name)
     }
 }
+
+@mixin sliderDefault {
+    @include media-down(xl) {
+        width: 941px;
+    }
+
+    @include media-down(lg) {
+        width: 825px;
+    }
+
+    @include media-down(md) {
+        width: 550px;
+    }
+
+    @include media-down(sm) {
+        width: 430px;
+    }
+
+    @include media-down(xs) {
+        width: 100%;
+    }
+
+    .swiper-wrapper {
+        margin: 0 -20px;
+        pointer-events: none;
+
+        @include media-down(lg) {
+            margin: 0 -15px;
+        }
+    }
+
+    .swiper-slide {
+        flex: 0 0 287px;
+        min-width: 287px;
+        margin: 0 20px;
+        opacity: 0;
+        visibility: hidden;
+
+        @include media-down(lg) {
+            flex: 0 0 255px;
+            min-width: 255px;
+            margin: 0 15px;
+        }
+
+        @include media-down(sm) {
+            flex: 0 0 200px;
+            min-width: 200px;
+        }
+
+        &-active, &-next {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+        }
+
+        &-next + .swiper-slide {
+            @include media-up(lg) {
+                opacity: 1;
+                visibility: visible;
+                pointer-events: all;
+            }
+
+            @include media-up(xxl) {
+                & + .swiper-slide {
+                    opacity: 1;
+                    visibility: visible;
+                    pointer-events: all;
+                }
+            }
+        }
+    }
+}
+
+@mixin text24 {
+    font-size: 24px;
+    line-height: 140%;
+    color: $color-text;
+
+    @include media-down(xl) {
+        font-size: 20px;
+    }
+
+    @include media-down(sm) {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: inherit;
+        margin-bottom: 30px;
+
+        @include media-down(xl) {
+            margin-bottom: 20px;
+        }
+
+        @include media-down(sm) {
+            margin-bottom: 15px;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@mixin buttonMargin {
+    margin-top: 50px;
+
+    @include media-down(xl) {
+        margin-top: 40px;
+    }
+
+    @include media-down(sm) {
+        margin-top: 30px;
+    }
+}

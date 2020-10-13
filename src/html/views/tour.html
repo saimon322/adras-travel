@@ -1,0 +1,792 @@
+<%=_.template(require('../parts/main-header.html'))({
+    title: "Лучшее Узбекистана | Adras Travel",
+    isWhite: true,
+    menu: {tours: "current-menu-item"}
+}) %>
+
+<main class="site-main">
+    <section class="page-header">
+        <div class="container page-flex">
+            <div class="page-flex__left">
+                <div class="breadcrumbs">
+                    <span><a href="#">Туры</a></span>
+                    <span>/</span>
+                    <span><a href="#">Туры в Узбекистан</a></span>
+                    <span>/</span>
+                    <span>Лучшее Узбекистана</span>
+                </div>
+                <h1 class="page-header__title">Лучшее Узбекистана</h1>
+            </div>
+            <div class="page-flex__right">
+                <p class="page-header__text">
+                    Узнайте все лучшее, что может предложить Узбекистан. За 10 дней вы не только посетите 
+                    красивые памятники архитектуры, но и познакомитесь с культурой и природой Узбекистана. 
+                    Вас может заинтерсовать тур с походом в горы Узбекистана или расширенный тур по Узбекистану.
+                </p>
+            </div>
+        </div>
+    </section><!-- /.page-header -->
+
+    <section class="section section--auto-height section--padding-big">
+        <h2 class="visually-hidden">Десятидневный тур по Узбекистану</h2>
+        <div class="section__flex">
+            <div class="section__block">
+                <div class="section__container">
+                    <div class="tour-info">
+                        <div class="tour-info__wrapper">
+                            <a href="#" class="button tour-info__time">10 дней / 9 ночей</a>
+                            <div class="tour-info__prices">
+                                <div class="tour-info__price tour-info-price">
+                                    <div class="tour-info-price__amount">$1999</div>
+                                    <div class="tour-info-price__text">Цена за тур за 1 человека в двухместном размещении</div>
+                                </div>
+                                <div class="tour-info__price tour-info-price">
+                                    <div class="tour-info-price__amount">$499</div>
+                                    <div class="tour-info-price__text">Доплата за одноместное размещение</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tour-info__hint">
+                            Пожалуйста, <a href="#"><b>свяжитесь с нами</b></a>, чтобы получить скидку для группы или семьи.
+                        </div>
+                    </div><!-- /.tour-info -->
+                    <p class="section__text">
+                        Десятидневный культурный тур по Узбекистану — это по-восточному колоритное 
+                        путешествие, наполненное яркими открытиями. Вы познакомитесь с достопримечательностями 
+                        Ташкента, Хивы, Бухары, Гиждувана, Самарканда и Шахрисабза, узнаете много интересного 
+                        об узбекских традициях и обычаях.
+                    </p>
+                    <a href="#" class="button button--opacity button--big section__button" title="Забронировать">
+                        Забронировать
+                        <svg width="16" height="16">
+                            <use xlink:href="#icon-arrow-button"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="section__block">
+                <picture class='section__img'>
+                    <source srcset='img/base/best-tour-map@1x.webp 1x,
+                                    img/base/best-tour-map@2x.webp 2x'
+                        type='image/webp'>
+                    <img src='img/base/best-tour-map/@1x.png'
+                        srcset='img/base/best-tour-map@1x.png 1x,
+                                img/base/best-tour-map@2x.png 2x'
+                        width='960'
+                        height='796'
+                        alt='Adras Travel'
+                        title='Adras Travel'>
+                </picture>
+            </div>
+        </div>
+    </section><!-- .section -->
+
+    <div class="page-slider js-slider" id="page-slider" data-loop="true">
+        <div class="swiper-slide page-slider__slide page-slide">
+            <picture class='page-slide__img'>
+                <source srcset='img/base/best-tour-slider@1x.webp 1x,
+                                img/base/best-tour-slider@2x.webp 2x'
+                    type='image/webp'>
+                <img src='img/base/best-tour-slider@1x.jpg'
+                    srcset='img/base/best-tour-slider@1x.jpg 1x,
+                            img/base/best-tour-slider@2x.jpg 2x'
+                    width='1920'
+                    height='627'
+                    alt='Adras Travel'
+                    title='Adras Travel'>
+            </picture>
+        </div>
+        
+        <div class="swiper-slide page-slider__slide page-slide">
+            <picture class='page-slide__img'>
+                <source srcset='img/base/best-tour-slider@1x.webp 1x,
+                                img/base/best-tour-slider@2x.webp 2x'
+                    type='image/webp'>
+                <img src='img/base/best-tour-slider@1x.jpg'
+                    srcset='img/base/best-tour-slider@1x.jpg 1x,
+                            img/base/best-tour-slider@2x.jpg 2x'
+                    width='1920'
+                    height='627'
+                    alt='Adras Travel'
+                    title='Adras Travel'>
+            </picture>
+        </div>
+    </div><!-- /.page-slider -->
+
+    <section class="section section--auto-height">
+        <div class="container">
+            <div class="tour-block">
+                <div class="tour-block__header page-flex">
+                    <div class="page-flex__left">
+                        <h2>Программа тура</h2>
+                    </div>
+                    <div class="page-flex__right">
+                        <div class="text24">
+                            <p>
+                                Тур рассчитан на 10 дней, в течение которых мы активно исследуем самые древние города 
+                                Узбекситана, приобщаемся к восточной культуре, пробуем новую еду и восхищаемся природой.
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- /.ttour-block__header -->
+
+                <div class="tour-program">
+                    <div class="tour-program__day tour-day">
+                        <div class="tour-day__header page-flex">
+                            <div class="page-flex__left">
+                                <h4 class="tour-day__title">День 1</h4>
+                            </div>
+                            <div class="page-flex__right">
+                                <div class="tour-day__subtitle">Ташкент — прибытие</div>
+                                <div class="tour-day__button"></div>
+                            </div>
+                        </div>
+                        <div class="tour-day__content">
+                            <div class="page-flex">
+                                <div class="page-flex__left"></div>
+                                <div class="page-flex__right">
+                                    <div class="tour-day__text">
+                                        Прибытие в Ташкент. Вас встретит наш водитель и отвезет в гостиницу. Заезд в гостиницу 
+                                        в 12:00. Экскурсия с гидом по Ташкенту. В этот день запланировано посещение Старого города, 
+                                        где расположен религиозный центр Ташкента — комплекс Хаст-Имам. Именно здесь хранится 
+                                        знаменитый Коран халифа Османа (VII в.). Затем вы побываете на одном из старейших базаров 
+                                        города – «Чорсу». После осмотра достопримечательностей Старого города вас ждет поездка на 
+                                        ташкентском метро в центр, где расположены площадь Амира Тимура, площадь Независимости и 
+                                        Музей прикладного искусства. Ночь в гостинице.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.tour-day -->
+                    <div class="tour-program__day tour-day">
+                        <div class="tour-day__header page-flex">
+                            <div class="page-flex__left">
+                                <h4 class="tour-day__title">День 2</h4>
+                            </div>
+                            <div class="page-flex__right">
+                                <div class="tour-day__subtitle">Ташкент – Ургенч – Хива</div>
+                                <div class="tour-day__button"></div>
+                            </div>
+                        </div>
+                        <div class="tour-day__content">
+                            <div class="page-flex">
+                                <div class="page-flex__left"></div>
+                                <div class="page-flex__right">
+                                    <div class="tour-day__text">
+                                        Ташкент – Ургенч – Хива. Вас встретит наш водитель и отвезет в гостиницу. Заезд в гостиницу 
+                                        в 12:00. Экскурсия с гидом по Ташкенту. В этот день запланировано посещение Старого города, 
+                                        где расположен религиозный центр Ташкента — комплекс Хаст-Имам. Именно здесь хранится 
+                                        знаменитый Коран халифа Османа (VII в.). Затем вы побываете на одном из старейших базаров 
+                                        города – «Чорсу». После осмотра достопримечательностей Старого города вас ждет поездка на 
+                                        ташкентском метро в центр, где расположены площадь Амира Тимура, площадь Независимости и 
+                                        Музей прикладного искусства. Ночь в гостинице.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.tour-day -->
+                    <div class="tour-program__day tour-day">
+                        <div class="tour-day__header page-flex">
+                            <div class="page-flex__left">
+                                <h4 class="tour-day__title">День 3</h4>
+                            </div>
+                            <div class="page-flex__right">
+                                <div class="tour-day__subtitle">Хива – Бухара</div>
+                                <div class="tour-day__button"></div>
+                            </div>
+                        </div>
+                        <div class="tour-day__content">
+                            <div class="page-flex">
+                                <div class="page-flex__left"></div>
+                                <div class="page-flex__right">
+                                    <div class="tour-day__text">
+                                        Хива – Бухара. Вас встретит наш водитель и отвезет в гостиницу. Заезд в гостиницу 
+                                        в 12:00. Экскурсия с гидом по Ташкенту. В этот день запланировано посещение Старого города, 
+                                        где расположен религиозный центр Ташкента — комплекс Хаст-Имам. Именно здесь хранится 
+                                        знаменитый Коран халифа Османа (VII в.). Затем вы побываете на одном из старейших базаров 
+                                        города – «Чорсу». После осмотра достопримечательностей Старого города вас ждет поездка на 
+                                        ташкентском метро в центр, где расположены площадь Амира Тимура, площадь Независимости и 
+                                        Музей прикладного искусства. Ночь в гостинице.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.tour-day -->
+                    <div class="tour-program__day tour-day">
+                        <div class="tour-day__header page-flex">
+                            <div class="page-flex__left">
+                                <h4 class="tour-day__title">День 4</h4>
+                            </div>
+                            <div class="page-flex__right">
+                                <div class="tour-day__subtitle">Бухара</div>
+                                <div class="tour-day__button"></div>
+                            </div>
+                        </div>
+                        <div class="tour-day__content">
+                            <div class="page-flex">
+                                <div class="page-flex__left"></div>
+                                <div class="page-flex__right">
+                                    <div class="tour-day__text">
+                                        Бухара. Вас встретит наш водитель и отвезет в гостиницу. Заезд в гостиницу 
+                                        в 12:00. Экскурсия с гидом по Ташкенту. В этот день запланировано посещение Старого города, 
+                                        где расположен религиозный центр Ташкента — комплекс Хаст-Имам. Именно здесь хранится 
+                                        знаменитый Коран халифа Османа (VII в.). Затем вы побываете на одном из старейших базаров 
+                                        города – «Чорсу». После осмотра достопримечательностей Старого города вас ждет поездка на 
+                                        ташкентском метро в центр, где расположены площадь Амира Тимура, площадь Независимости и 
+                                        Музей прикладного искусства. Ночь в гостинице.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.tour-day -->
+                    <div class="tour-program__day tour-day">
+                        <div class="tour-day__header page-flex">
+                            <div class="page-flex__left">
+                                <h4 class="tour-day__title">День 5</h4>
+                            </div>
+                            <div class="page-flex__right">
+                                <div class="tour-day__subtitle">Бухара</div>
+                                <div class="tour-day__button"></div>
+                            </div>
+                        </div>
+                        <div class="tour-day__content">
+                            <div class="page-flex">
+                                <div class="page-flex__left"></div>
+                                <div class="page-flex__right">
+                                    <div class="tour-day__text">
+                                        Бухара. Вас встретит наш водитель и отвезет в гостиницу. Заезд в гостиницу 
+                                        в 12:00. Экскурсия с гидом по Ташкенту. В этот день запланировано посещение Старого города, 
+                                        где расположен религиозный центр Ташкента — комплекс Хаст-Имам. Именно здесь хранится 
+                                        знаменитый Коран халифа Османа (VII в.). Затем вы побываете на одном из старейших базаров 
+                                        города – «Чорсу». После осмотра достопримечательностей Старого города вас ждет поездка на 
+                                        ташкентском метро в центр, где расположены площадь Амира Тимура, площадь Независимости и 
+                                        Музей прикладного искусства. Ночь в гостинице.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.tour-day -->
+                    <div class="tour-program__day tour-day">
+                        <div class="tour-day__header page-flex">
+                            <div class="page-flex__left">
+                                <h4 class="tour-day__title">День 6</h4>
+                            </div>
+                            <div class="page-flex__right">
+                                <div class="tour-day__subtitle">Бухара – Гиждуван – Самарканд</div>
+                                <div class="tour-day__button"></div>
+                            </div>
+                        </div>
+                        <div class="tour-day__content">
+                            <div class="page-flex">
+                                <div class="page-flex__left"></div>
+                                <div class="page-flex__right">
+                                    <div class="tour-day__text">
+                                        Бухара – Гиждуван – Самарканд. Вас встретит наш водитель и отвезет в гостиницу. Заезд в гостиницу 
+                                        в 12:00. Экскурсия с гидом по Ташкенту. В этот день запланировано посещение Старого города, 
+                                        где расположен религиозный центр Ташкента — комплекс Хаст-Имам. Именно здесь хранится 
+                                        знаменитый Коран халифа Османа (VII в.). Затем вы побываете на одном из старейших базаров 
+                                        города – «Чорсу». После осмотра достопримечательностей Старого города вас ждет поездка на 
+                                        ташкентском метро в центр, где расположены площадь Амира Тимура, площадь Независимости и 
+                                        Музей прикладного искусства. Ночь в гостинице.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.tour-day -->
+                    <div class="tour-program__day tour-day">
+                        <div class="tour-day__header page-flex">
+                            <div class="page-flex__left">
+                                <h4 class="tour-day__title">День 7</h4>
+                            </div>
+                            <div class="page-flex__right">
+                                <div class="tour-day__subtitle">Самарканд</div>
+                                <div class="tour-day__button"></div>
+                            </div>
+                        </div>
+                        <div class="tour-day__content">
+                            <div class="page-flex">
+                                <div class="page-flex__left"></div>
+                                <div class="page-flex__right">
+                                    <div class="tour-day__text">
+                                        Самарканд. Вас встретит наш водитель и отвезет в гостиницу. Заезд в гостиницу 
+                                        в 12:00. Экскурсия с гидом по Ташкенту. В этот день запланировано посещение Старого города, 
+                                        где расположен религиозный центр Ташкента — комплекс Хаст-Имам. Именно здесь хранится 
+                                        знаменитый Коран халифа Османа (VII в.). Затем вы побываете на одном из старейших базаров 
+                                        города – «Чорсу». После осмотра достопримечательностей Старого города вас ждет поездка на 
+                                        ташкентском метро в центр, где расположены площадь Амира Тимура, площадь Независимости и 
+                                        Музей прикладного искусства. Ночь в гостинице.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.tour-day -->
+                    <div class="tour-program__day tour-day">
+                        <div class="tour-day__header page-flex">
+                            <div class="page-flex__left">
+                                <h4 class="tour-day__title">День 8</h4>
+                            </div>
+                            <div class="page-flex__right">
+                                <div class="tour-day__subtitle">Ташкент — прибытие</div>
+                                <div class="tour-day__button"></div>
+                            </div>
+                        </div>
+                        <div class="tour-day__content">
+                            <div class="page-flex">
+                                <div class="page-flex__left"></div>
+                                <div class="page-flex__right">
+                                    <div class="tour-day__text">
+                                        Самарканд – Шахрисабз – Самарканд. Вас встретит наш водитель и отвезет в гостиницу. Заезд в гостиницу 
+                                        в 12:00. Экскурсия с гидом по Ташкенту. В этот день запланировано посещение Старого города, 
+                                        где расположен религиозный центр Ташкента — комплекс Хаст-Имам. Именно здесь хранится 
+                                        знаменитый Коран халифа Османа (VII в.). Затем вы побываете на одном из старейших базаров 
+                                        города – «Чорсу». После осмотра достопримечательностей Старого города вас ждет поездка на 
+                                        ташкентском метро в центр, где расположены площадь Амира Тимура, площадь Независимости и 
+                                        Музей прикладного искусства. Ночь в гостинице.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.tour-day -->
+                    <div class="tour-program__day tour-day">
+                        <div class="tour-day__header page-flex">
+                            <div class="page-flex__left">
+                                <h4 class="tour-day__title">День 9</h4>
+                            </div>
+                            <div class="page-flex__right">
+                                <div class="tour-day__subtitle"> Самарканд – Ташкент</div>
+                                <div class="tour-day__button"></div>
+                            </div>
+                        </div>
+                        <div class="tour-day__content">
+                            <div class="page-flex">
+                                <div class="page-flex__left"></div>
+                                <div class="page-flex__right">
+                                    <div class="tour-day__text">
+                                        Самарканд – Ташкент. Вас встретит наш водитель и отвезет в гостиницу. Заезд в гостиницу 
+                                        в 12:00. Экскурсия с гидом по Ташкенту. В этот день запланировано посещение Старого города, 
+                                        где расположен религиозный центр Ташкента — комплекс Хаст-Имам. Именно здесь хранится 
+                                        знаменитый Коран халифа Османа (VII в.). Затем вы побываете на одном из старейших базаров 
+                                        города – «Чорсу». После осмотра достопримечательностей Старого города вас ждет поездка на 
+                                        ташкентском метро в центр, где расположены площадь Амира Тимура, площадь Независимости и 
+                                        Музей прикладного искусства. Ночь в гостинице.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.tour-day -->
+                    <div class="tour-program__day tour-day">
+                        <div class="tour-day__header page-flex">
+                            <div class="page-flex__left">
+                                <h4 class="tour-day__title">День 1</h4>
+                            </div>
+                            <div class="page-flex__right">
+                                <div class="tour-day__subtitle">Ташкент – вылет</div>
+                                <div class="tour-day__button"></div>
+                            </div>
+                        </div>
+                        <div class="tour-day__content">
+                            <div class="page-flex">
+                                <div class="page-flex__left"></div>
+                                <div class="page-flex__right">
+                                    <div class="tour-day__text">
+                                        Ташкент – вылет. Вас встретит наш водитель и отвезет в гостиницу. Заезд в гостиницу 
+                                        в 12:00. Экскурсия с гидом по Ташкенту. В этот день запланировано посещение Старого города, 
+                                        где расположен религиозный центр Ташкента — комплекс Хаст-Имам. Именно здесь хранится 
+                                        знаменитый Коран халифа Османа (VII в.). Затем вы побываете на одном из старейших базаров 
+                                        города – «Чорсу». После осмотра достопримечательностей Старого города вас ждет поездка на 
+                                        ташкентском метро в центр, где расположены площадь Амира Тимура, площадь Независимости и 
+                                        Музей прикладного искусства. Ночь в гостинице.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- /.tour-day -->
+                </div><!-- /.tour-program -->
+                
+                <a href="#" class="button button--opacity button--big tour-block__button" title="Забронировать">
+                    Забронировать
+                    <svg width="16" height="16">
+                        <use xlink:href="#icon-arrow-button"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section><!-- / .section -->
+
+    <section class="section section--auto-height section--bg--gray">
+        <div class="container">
+            <div class="tour-block">
+                <div class="tour-benefits">
+                    <div class="tour-benefits__item">
+                        <h2 class="tour-benefits__title">Включено</h2>
+                        <ul class="tour-benefits__list tour-benefits__list--include">
+                            <li>
+                                <p>Все трансферы по 1-2 пассажира на автомобиле типа «седан»; 3-7 пассажиров в минивэне; 8-13 пассажиров в 30-местном автобусе;</p>
+                            </li>
+                            <li>
+                                <p>Размещение в двухместном номере с завтраками;</p>
+                            </li>
+                            <li>
+                                <p>Экскурсионное обслуживание в каждом городе с местными гидами;</p>
+                            </li>
+                            <li>
+                                <p>Входные билеты на экскурсионные объекты по программе;</p>
+                            </li>
+                            <li>
+                                <p>Мастер-класс и обед в Гиждуване;</p>
+                            </li>
+                            <li>
+                                <p>Билет на поезд Самарканд-Ташкент;</p>
+                            </li>
+                            <li>
+                                <p>Авиабилет эконом-класса на рейс Ташкент-Ургенч.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tour-benefits__item">
+                        <h2 class="tour-benefits__title">Не включено</h2>
+                        <ul class="tour-benefits__list tour-benefits__list--exclude">
+                            <li>
+                                <p>Тур-лидер, сопровождающий туристов на протяжении всего тура;</p>
+                            </li>
+                            <li>
+                                <p>Полный пансион (обеды и ужины);</p>
+                            </li>
+                            <li>
+                                <p>Плата за дополнительные гостиничные услуги;</p>
+                            </li>
+                            <li>
+                                <p>Консульские сборы за узбекскую туристическую визу;</p>
+                            </li>
+                            <li>
+                                <p>Чаевые не включены, и остаются на ваше усмотрение;</p>
+                            </li>
+                            <li>
+                                <p>Страховой полис.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- /.tour-benefits -->
+            </div>
+        </div>
+    </section><!-- / .section -->
+
+    <section class="section section--auto-height">
+        <div class="container">
+            <div class="tour-block">
+                <div class="tour-block__header page-flex">
+                    <div class="page-flex__left">
+                        <h2>Проживание</h2>
+                    </div>
+                    <div class="page-flex__right">
+                        <div class="text24">
+                            <p>
+                                Мы предлагаем несколько вариантов размещения: от роскошных пятизвёздочных отелей, до 
+                                комфортных 2-3* гостиниц, апартаментов и гостевых домов. Выберите то, что подходит 
+                                именно вам.
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- /.tour-block__header -->
+
+                <div class="tour-housing">
+                    <div class="tour-housing__item page-flex">
+                        <div class="page-flex__left">
+                            <h4 class="tour-housing__title">Ташкент</h4>
+                        </div>
+                        <div class="page-flex__right">
+                            <div class="tour-housing__hotels">
+                                <a href="#">Tashkent Palace</a>, <a href="#">Miran</a> или похожий
+                            </div>
+                        </div>
+                    </div><!-- /.tour-housing__item -->
+                    <div class="tour-housing__item page-flex">
+                        <div class="page-flex__left">
+                            <h4 class="tour-housing__title">Самарканд</h4>
+                        </div>
+                        <div class="page-flex__right">
+                            <div class="tour-housing__hotels">
+                                <a href="#">Platan</a>, <a href="#">Rabat</a> или похожий
+                            </div>
+                        </div>
+                    </div><!-- /.tour-housing__item -->
+                    <div class="tour-housing__item page-flex">
+                        <div class="page-flex__left">
+                            <h4 class="tour-housing__title">Бухара</h4>
+                        </div>
+                        <div class="page-flex__right">
+                            <div class="tour-housing__hotels">
+                                <a href="#">Minzifa</a>, <a href="#">Devon</a> или похожий
+                            </div>
+                        </div>
+                    </div><!-- /.tour-housing__item -->
+                </div><!-- /.tour-housing -->
+            </div>
+        </div>
+    </section><!-- / .section -->
+
+    <section class="section section--bg--gray">
+        <div class="section__flex">
+            <div class="section__block section__block--dark">
+                <picture class='section__bg'>
+                    <source srcset='img/base/build-3@1x.webp 1x,
+                                    img/base/build-3@2x.webp 2x'
+                        type='image/webp'>
+                    <img src='img/base/build-3@1x.jpg'
+                        srcset='img/base/build-3@1x.jpg 1x,
+                                img/base/build-3@2x.jpg 2x'
+                        width='960'
+                        height='1080'
+                        alt='Adras Travel'
+                        title='Adras Travel'>
+                </picture>
+
+                <div class="section__container">
+                    <h2 class="section__title">
+                        Бронирование тура<br> с Adras Travel
+                    </h2>
+                    <p class="section__text">
+                        Свяжитесь с нами уже сегодня: отправьте нам сообщение по электронной почте или воспользуйтесь 
+                        нашей контактной формой. В том случае, если вы не нашли подходящее путешествие, сообщите нам 
+                        свою идею о туре в Узбекистан. Мы с удовольствием составим ваше путешествие с учетом пожеланий.
+                    </p>
+                </div>
+            </div>
+
+            <div class="section__block">
+                <%=_.template(require('../parts/contacts-form.html'))() %>
+            </div>
+        </div>
+    </section><!-- / .section -->
+
+    <section class="section same-tours">
+        <div class="container">
+            <div class="same-tours__header page-flex">
+                <div class="page-flex__left">
+                    <h2 class="same-tours__title">Посмотрите<br> похожие туры</h2>
+                </div>
+                <div class="page-flex__right">
+                    <div class="same-tours__text">
+                        <p>
+                            Мы собрали лучшие туры по Центральной Азии и предлгаем вам сервис по бронированию 
+                            лучших отелей и другие туристические услуги в странах Центральной Азии, которые 
+                            известны как участки Великого Шелкового пути.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="same-tours__slider tours-slider js-slider" id="tours-slider">
+                <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                    <picture class='tours-slide__bg'>
+                        <source srcset='img/base/slider-1@1x.webp 1x,
+                                        img/base/slider-1@2x.webp 2x'
+                            type='image/webp'>
+                        <img src='img/base/slider-1@1x.jpg'
+                            srcset='img/base/slider-1@1x.jpg 1x,
+                                    img/base/slider-1@2x.jpg 2x'
+                            width='287'
+                            height='448'
+                            alt='Adras Travel'
+                            title='Adras Travel'>
+                    </picture>
+                    <div class="tours-slide__price">$1299</div>
+                    <div class="tours-slide__content">
+                        <div class="tours-slide__type">Городской тур</div>
+                        <h3 class="tours-slide__title">Лучшее узбекистана</h3>
+                        <div class="tours-slide__time">10 дней / 9 ночей</div>
+                    </div>
+                    <div class="tours-slide__arrow">
+                        <svg width='30' height='30'>
+                            <use xlink:href='#icon-arrow-link'></use>
+                        </svg>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                    <picture class='tours-slide__bg'>
+                        <source srcset='img/base/slider-2@1x.webp 1x,
+                                        img/base/slider-2@2x.webp 2x'
+                            type='image/webp'>
+                        <img src='img/base/slider-2@1x.jpg'
+                            srcset='img/base/slider-2@1x.jpg 1x,
+                                    img/base/slider-2@2x.jpg 2x'
+                            width='287'
+                            height='448'
+                            alt='Adras Travel'
+                            title='Adras Travel'>
+                    </picture>
+                    <div class="tours-slide__price">$999</div>
+                    <div class="tours-slide__content">
+                        <div class="tours-slide__type">Короткий тур</div>
+                        <h3 class="tours-slide__title">Романтика Ташкента</h3>
+                        <div class="tours-slide__time">3 дня / 2 ночи</div>
+                    </div>
+                    <div class="tours-slide__arrow">
+                        <svg width='30' height='30'>
+                            <use xlink:href='#icon-arrow-link'></use>
+                        </svg>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                    <picture class='tours-slide__bg'>
+                        <source srcset='img/base/slider-3@1x.webp 1x,
+                                        img/base/slider-3@2x.webp 2x'
+                            type='image/webp'>
+                        <img src='img/base/slider-3@1x.jpg'
+                            srcset='img/base/slider-3@1x.jpg 1x,
+                                    img/base/slider-3@2x.jpg 2x'
+                            width='287'
+                            height='448'
+                            alt='Adras Travel'
+                            title='Adras Travel'>
+                    </picture>
+                    <div class="tours-slide__price">$1999</div>
+                    <div class="tours-slide__content">
+                        <div class="tours-slide__type">Городской тур</div>
+                        <h3 class="tours-slide__title">Тайны старого города</h3>
+                        <div class="tours-slide__time">7 дней / 6 ночей</div>
+                    </div>
+                    <div class="tours-slide__arrow">
+                        <svg width='30' height='30'>
+                            <use xlink:href='#icon-arrow-link'></use>
+                        </svg>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                    <picture class='tours-slide__bg'>
+                        <source srcset='img/base/slider-12@1x.webp 1x,
+                                        img/base/slider-12@2x.webp 2x'
+                            type='image/webp'>
+                        <img src='img/base/slider-12@1x.jpg'
+                            srcset='img/base/slider-12@1x.jpg 1x,
+                                    img/base/slider-12@2x.jpg 2x'
+                            width='287'
+                            height='448'
+                            alt='Adras Travel'
+                            title='Adras Travel'>
+                    </picture>
+                    <div class="tours-slide__price">$999</div>
+                    <div class="tours-slide__content">
+                        <div class="tours-slide__type">Групповой тур</div>
+                        <h3 class="tours-slide__title">Дарваза Гас Кратер</h3>
+                        <div class="tours-slide__time">2 дня / 1 ночь</div>
+                    </div>
+                    <div class="tours-slide__arrow">
+                        <svg width='30' height='30'>
+                            <use xlink:href='#icon-arrow-link'></use>
+                        </svg>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                    <picture class='tours-slide__bg'>
+                        <source srcset='img/base/slider-1@1x.webp 1x,
+                                        img/base/slider-1@2x.webp 2x'
+                            type='image/webp'>
+                        <img src='img/base/slider-1@1x.jpg'
+                            srcset='img/base/slider-1@1x.jpg 1x,
+                                    img/base/slider-1@2x.jpg 2x'
+                            width='287'
+                            height='448'
+                            alt='Adras Travel'
+                            title='Adras Travel'>
+                    </picture>
+                    <div class="tours-slide__price">$1299</div>
+                    <div class="tours-slide__content">
+                        <div class="tours-slide__type">Городской тур</div>
+                        <h3 class="tours-slide__title">Лучшее узбекистана</h3>
+                        <div class="tours-slide__time">10 дней / 9 ночей</div>
+                    </div>
+                    <div class="tours-slide__arrow">
+                        <svg width='30' height='30'>
+                            <use xlink:href='#icon-arrow-link'></use>
+                        </svg>
+                    </div>
+                </a>
+
+                <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                    <picture class='tours-slide__bg'>
+                        <source srcset='img/base/slider-2@1x.webp 1x,
+                                        img/base/slider-2@2x.webp 2x'
+                            type='image/webp'>
+                        <img src='img/base/slider-2@1x.jpg'
+                            srcset='img/base/slider-2@1x.jpg 1x,
+                                    img/base/slider-2@2x.jpg 2x'
+                            width='287'
+                            height='448'
+                            alt='Adras Travel'
+                            title='Adras Travel'>
+                    </picture>
+                    <div class="tours-slide__price">$999</div>
+                    <div class="tours-slide__content">
+                        <div class="tours-slide__type">Короткий тур</div>
+                        <h3 class="tours-slide__title">Романтика Ташкента</h3>
+                        <div class="tours-slide__time">3 дня / 2 ночи</div>
+                    </div>
+                    <div class="tours-slide__arrow">
+                        <svg width='30' height='30'>
+                            <use xlink:href='#icon-arrow-link'></use>
+                        </svg>
+                    </div>
+                </a>
+            </div><!-- /.tours-slider -->
+        </div>
+    </section><!-- / .same-tours -->
+
+    <section class="section section--bg--gray advantages">
+        <div class="container">
+            <div class="advantages__header page-flex">
+                <div class="page-flex__left">
+                    <h2>Почему нас выбирают для&nbsp;путешествий?</h2>
+                </div>
+                <div class="page-flex__right">
+                    <p class="text24">
+                        «Адрас Трэвел» — туроператор с многолетним опытом работы. Мы специализируемся на турах в 
+                        Центральную Азию. Благодаря нашей обширной сети и знаниям, мы поможем сделать вашу поездку 
+                        незабываемой.
+                    </p>
+                </div>
+            </div>
+
+            <div class="advantages__list">
+                <div class="advantages__item advantage">
+                    <h4 class="advantage__title">Персональные туры</h4>
+                    <p class="advantage__text">
+                        Поможем составить индивидуальный план путешествия в любом направлении. Подберём 
+                        оптимальный маршрут в рамках вашего тура.
+                    </p>
+                </div>
+                <div class="advantages__item advantage">
+                    <h4 class="advantage__title">Комбинирование туров</h4>
+                    <p class="advantage__text">
+                        Наши туры можно комбинировать или расширять дополнительными поездками в соседние 
+                        направления. 
+                    </p>
+                </div>
+                <div class="advantages__item advantage">
+                    <h4 class="advantage__title">Компетентные гиды</h4>
+                    <p class="advantage__text">
+                        С нами работают опытные и надёжные гиды. Экскурсии могут быть предложены как на 
+                        русском, так и на иностранных языках.
+                    </p>
+                </div>
+                <div class="advantages__item advantage">
+                    <h4 class="advantage__title">Визовая поддержка</h4>
+                    <p class="advantage__text">
+                        Консультируем наших клиентов по вопросам оформления и подачи документов в 
+                        миграционные службы.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section><!-- / .advantages -->
+</main><!-- / .site-main -->
+
+<%=_.template(require('../parts/main-form.html'))({
+    isGray: false
+}) %>
+
+<%=_.template(require('../parts/main-footer.html'))() %>

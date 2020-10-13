@@ -1,0 +1,152 @@
+.info-cards {
+    padding: 197px 0 60px;
+
+    @include media-down(xl) {
+        padding: 170px 0 50px;
+    }
+
+    @include media-down(lg) {
+        padding: 120px 0 0;
+    }
+
+    @include media-down(md) {
+        padding: 100px 0 -20px;
+    }
+
+    @include media-down(sm) {
+        padding-top: 70px;
+    }
+
+    @include media-down(xs) {
+        padding-top: 50px;
+    }
+
+    &__container {
+        max-width: 1500px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+
+        @include media-down(lg) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &--bg--gray {
+        background: $color-gray;
+
+        .info-card {
+            background-color: #fff;
+        }
+    }
+}
+
+.info-card {
+    padding: 48px 40px 52px;
+    border: 2px solid $color-card;
+    border-radius: 25px;
+    overflow: hidden;
+    width: calc((100% - 108px) / 4);
+    min-height: 382px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    @include media-down(xl) {
+        padding: 40px 22px;
+        min-height: 320px;
+    }
+
+    @include media-down(lg) {
+        width: calc((100% - 40px) / 2);
+        padding: 40px 34px;
+        margin-bottom: 30px;
+        min-height: 0;
+    }
+
+    @include media-down(xs) {
+        width: 100%;
+        padding: 30px 20px;
+        margin-right: 0 !important;
+        min-height: 0;
+        margin-bottom: 20px;
+        border-radius: 15px;
+    }
+
+    &:first-child {
+        background: $color-card;
+    }
+
+    &:not(:last-child) {
+        margin-right: 36px;
+
+        @include media-down(xl) {
+            margin-right: 25px;
+        }
+
+        @include media-down(lg) {
+            margin-right: 0;
+        }
+    }
+
+    &:nth-child(odd) {
+        margin-right: 40px;
+    }
+
+    &--bg {
+        border: 0;
+        
+        @include media-up(xl) {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+    }
+
+    &--bg &__content {
+        color: #fff;
+    }
+
+    &__bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        position: relative;
+    }
+
+    &__title {
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        @include text24;
+        max-width: 240px;
+
+        @include media-down(lg) {
+            max-width: 100%;
+        }
+    }
+
+    &__button {
+        width: 200px;
+        height: 46px;
+        margin-top: 30px;
+
+        @include media-down(xs) {
+            margin-top: 20px;
+        }
+    }
+}

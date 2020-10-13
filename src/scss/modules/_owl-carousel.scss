@@ -1,0 +1,61 @@
+.owl-carousel {
+    position: relative;
+}
+
+.owl-stage,
+.owl-stage-outer,
+.owl-item {
+    height: 100%;
+}
+
+.owl-stage {
+    display: flex;
+}
+
+.owl-item {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0);
+}
+
+.owl-nav {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 50%;
+
+    button {
+        width: 59px;
+        height: 59px;
+        cursor: pointer;
+        border: 0;
+        position: absolute;
+        top: -30px;
+        background-color: transparent;
+        transition: transform .25s ease;
+        color: #fff;
+
+        @include media-down(sm) {
+            width: 40px;
+            height: 40px;
+            top: -20px;
+        }
+    }
+}
+
+.owl-prev {
+    left: 0;
+    background-image: url(img/svg-sprite/icon-slide-prev.svg);
+
+    &:hover {
+        transform: translateX(-5px);
+    }
+}
+
+.owl-next {
+    right: 0;
+    background-image: url(img/svg-sprite/icon-slide-next.svg);
+
+    &:hover {
+        transform: translateX(5px);
+    }
+}

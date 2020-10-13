@@ -1,19 +1,109 @@
 .button {
+    width: 259px;
+    height: 58px;
     position: relative;
-    display: inline-block;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
     max-width: 100%;
     user-select: none;
-    vertical-align: middle;
     text-align: center;
-    white-space: normal;
-    word-wrap: normal;
     color: #fff;
     cursor: pointer;
-    transition: all .2s ease-out;
-}
+    font-size: 20px;
+    line-height: 23px;
+    background-color: $color-main;
+    border-radius: 40px;
+    transition: .2s ease;
+    padding: 0;
+    border: 2px solid transparent;
 
-.button__icon {
-    display: flex;
-    align-items: center;
-    flex-shrink: 0;
+    &:hover {
+        background-color: #00c566;
+    }
+
+    &:active {
+        background-color: #02b55e;
+
+        svg {
+            transform: translateX(5px);
+        }
+    }
+
+    @include media-down(xl) {
+        font-size: 18px;
+        width: 240px;
+    }
+
+    @include media-down(sm) {
+        width: 250px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    span {
+        transition: .2s ease;
+    }
+
+    svg {
+        margin-left: 15px;
+        transition: .2s ease;
+
+        @include media-down(sm) {
+            width: 12px;
+            height: 12px;
+            margin-left: 12px;
+        }
+    }
+
+    &--shadow {
+        box-shadow: 12px 10px 30px #D1D9E6;
+
+        &:active {
+            box-shadow: none;
+        }
+    }
+
+    &--opacity {
+        display: inline-flex;
+        align-items: center;
+        flex-shrink: 0;
+        background: none;
+        color: #000;
+        border: 2px solid #000;
+        height: 46px;
+        width: auto;
+        padding: 0 16px;
+        font-size: 18px;
+
+        @include media-down(sm) {
+            font-size: 14px;
+            height: 35px;
+        }
+
+        &:hover {
+            background-color: $color-hover-black;
+        }
+
+        &:active {
+            background-color: $color-hover-black;
+        }
+    }
+
+    &--big {
+        width: 259px;
+        height: 58px;
+        font-size: 22px;
+
+        @include media-down(xl) {
+            font-size: 20px;
+            width: 240px;
+        }
+
+        @include media-down(sm) {
+            width: 200px;
+            height: 45px;
+            font-size: 16px;
+        }
+    }
 }

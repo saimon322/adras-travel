@@ -1,0 +1,129 @@
+.tour-program {
+    margin-top: 47px;
+    border-top: 1px solid #000;
+
+    @include media-down(sm) {
+        margin-top: 30px;
+    }
+}
+
+.tour-day {
+    width: 100%;
+    border-bottom: 1px solid #000;
+
+    &__header {
+        min-height: 97px;
+        padding: 20px 0;
+        cursor: pointer;
+        position: relative;
+        align-items: center;
+
+        @include media-down(xl) {
+            min-height: 85px;
+        }
+
+        @include media-down(lg) {
+            display: flex;
+        }
+
+        @include media-down(md) {
+            min-height: 80px;
+        }
+
+        @include media-down(sm) {
+            display: block;
+            min-height: 0;
+            padding: 10px 0;
+            padding-right: 50px;
+        }
+
+        .page-flex__left {
+            @include media-down(lg) {
+                width: 150px;
+                margin-bottom: 0;
+            }
+
+            @include media-down(sm) {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    &__subtitle {
+        @include text24;
+        padding-right: 100px;
+        transition: color .25s ease;
+
+        @include media-down(sm) {
+            padding-right: 0;
+        }
+    }
+
+    &__button {
+        width: 100px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        transition: transform .25s ease;
+
+        @include media-down(md) {
+            width: 100px;
+        }
+
+        @include media-down(sm) {
+            width: 50px;
+            height: 50px;
+        }
+
+        &:before,
+        &:after {
+            content: '';
+            position: absolute;
+            left: 50%; top: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            width: 33px; height: 2px;
+            background: #000;
+
+            @include media-down(sm) {
+                width: 20px;
+            }
+        }
+
+        &:after {
+            transform: translate(-50%, -50%) rotate(90deg);
+        }
+    }
+
+    &__content {
+        display: none;
+        padding: 40px 0 75px;
+
+        @include media-down(xl) {
+            padding: 30px 0 50px;
+        }
+
+        @include media-down(lg) {
+            padding: 20px 0 40px;
+        }
+
+        .page-flex__left {
+            margin-bottom: 0;
+        }
+    }
+
+    &__text {
+        @include text24;
+    }
+
+    &--active &__button {
+        transform: rotate(135deg);
+    }
+
+    &--active &__subtitle {
+        color: $color-gray-1;
+    }
+}

@@ -1,0 +1,215 @@
+.page-aside {
+
+    & > ul {
+        max-width: 400px;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 30px;
+        margin: 64px 0;
+        transition: top .5s ease;
+
+        .header-sticky-show & {
+            top: 128px;
+        }
+
+        @include media-down(lg) {
+            display: flex;
+            flex-direction: column;
+            top: 0 !important;
+            margin: 0;
+            max-height: 52px;
+            overflow: hidden;
+            transition: max-height .5s ease;
+
+            &.showed {
+                max-height: 800px;
+            }
+        }
+
+        & > li {
+            border-bottom: 1px solid #000;
+
+            &:first-child {
+                border-top: 1px solid #000;
+
+                @include media-down(lg) {
+                    border-top: 0;
+                }
+            }
+
+            &.current-menu-item {
+                
+                @include media-up(xl) {
+                    background: $color-gray;
+
+                    .section--bg--gray & {
+                        background-color: #fff;
+                    }
+                }
+
+                @include media-down(lg) {
+                    order: -1;
+                    border-top: 1px solid #000;
+                }
+            }
+        }
+    }
+
+    &__list {
+
+        a:active {
+            svg {
+                transform: translateX(5px);
+            }
+        }
+
+        .current-menu-item > a {
+            position: relative;
+    
+            &:after {
+                content: '';
+                position: absolute;
+                right: 17px; top: 50%;
+                transform: translateY(-50%);
+                width: 27px; height: 27px;
+                background: url(../img/svg-sprite/icon-check.svg) center no-repeat;
+    
+                @include media-down(lg) {
+                    right: 20px;
+                }
+    
+                @include media-down(sm) {
+                    right: 15px;
+                }
+            }
+    
+            svg {
+                display: none;
+            }
+        }
+    }
+
+    &__blog {
+
+        & > li.current-menu-item {
+            background: none !important;
+        }
+
+        & > li > a {
+            @include media-up(xl) {
+                padding: 0 10px;
+            }
+        }
+
+        .active svg {
+            transform: rotate(135deg);
+        }
+    }
+
+    &__link {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 50px;
+        padding-left: 14px;
+        padding-right: 17px;
+        white-space: nowrap;
+
+        @include media-down(sm) {
+            padding: 0 10px;
+            height: 45px;
+        }
+    }
+
+    svg {
+        transition: transform .2s ease;
+    }
+
+    a {        
+        transition: color .2s ease;
+
+        &:hover {
+            @include media-up(lg) {
+                color: $color-main;
+            }
+        }
+    }
+
+    .current-menu-item > a {
+        color: $color-main;
+    }
+
+    &__sublist {
+        display: none;
+        padding: 10px 0 20px 14px;
+
+        @include media-down(sm) {
+            padding: 5px 0 15px 20px;
+        }
+
+        li:not(:last-child) {
+            margin-bottom: 10px;   
+        }
+
+        a {
+            font-size: 18px;
+            line-height: 140%;
+            color: $color-gray-1;
+
+            @include media-down(sm) {
+                font-size: 16px;
+            }
+        }
+
+        .current-menu-item > a {
+            color: #000;
+        }
+    }
+
+    &__mobile {
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        font-size: 18px;
+        position: relative;
+
+        @include media-down(sm) {
+            font-size: 16px;
+        }
+
+        @include media-up(xl) {
+            display: none;
+        }
+
+        span:last-child {
+            display: none;
+        }
+        
+        &:after {
+            content: '';
+            position: absolute;
+            left: 50%; top: 21px;
+            display: block;
+            width: 15px; height: 9px;
+            transform: translateX(55px);
+            background: url(../img/svg-sprite/icon-arrow-down.svg) center no-repeat;
+            background-size: contain;
+            transition: transform .25s ease;
+        }
+
+        &.active {
+            span:first-child {
+                display: none;
+            }
+            span:last-child {
+                display: flex;
+            }
+            &:after {
+                transform: translateX(55px) rotate(180deg);
+            }
+        }
+    }
+}

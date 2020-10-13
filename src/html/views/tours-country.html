@@ -1,0 +1,1108 @@
+<%=_.template(require('../parts/main-header.html'))({
+    title: "Туры в Узбекистане | Adras Travel",
+    isWhite: true,
+    menu: {tours: "current-menu-item"}
+}) %>
+
+<main class="site-main">
+    <section class="page-header">
+        <div class="container page-flex">
+            <div class="page-flex__left">
+                <div class="breadcrumbs">
+                    <span><a href="#">Туры</a></span>
+                    <span>/</span>
+                    <span>Узбекистан</span>
+                </div>
+                <h1 class="page-header__title">Узбекистан</h1>
+                <a href="#" class="button button--opacity page-header__button" title="О странах">
+                    О странах
+                    <svg width="16" height="16">
+                        <use xlink:href="#icon-arrow-button"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="page-flex__right">
+                <p class="page-header__text">
+                    Страна в своем прошлом была расположена на Великом Шелковом пути и всегда была 
+                    плавильным котлом культур. Благодаря строительству исторических городов, Узбекистан 
+                    притягивает своей историей, архитектурой и традициями. В сочетании с тёплым узбекским 
+                    гостеприимством это делает визит в страну уникальным.
+                </p>
+            </div>
+        </div>
+    </section><!-- /.page-header -->
+
+    <section class="section">
+        <div class="container">
+            <div class="tour-types">
+                <div class="tour-types__header page-flex">
+                    <div class="page-flex__left">
+                        <span>Тип тура</span>
+                    </div>
+                    <div class="page-flex__right">
+                        <span>Описание</span>
+                    </div>
+                </div>
+                <!-- /.tour-types__header -->
+
+                <div class="tour-types__item tour-type">
+                    <div class="tour-type__header page-flex">
+                        <div class="page-flex__left">
+                            <h2 class="tour-type__title">Городские</h2>
+                        </div>
+                        <div class="page-flex__right">
+                            <p class="tour-type__desc">
+                                Экскурсионные туры по городам<br> или по конкретному городу
+                            </p>
+                            <a href="#" class="button button--opacity tour-type__toggler" title="Туры">
+                                <span>Туры</span>
+                                <svg width="16" height="16">
+                                    <use xlink:href="#icon-arrow-button"></use>
+                                </svg>
+                            </a>
+                        </div>  
+                        
+                        <a href="all-tours.html" class="button button--opacity tour-type__button" title="Все туры">
+                            Все туры
+                            <svg width="16" height="16">
+                                <use xlink:href="#icon-arrow-button"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="tour-type__content page-flex">
+                        <div class="page-flex__left"></div>
+                        <div class="page-flex__right">
+                            <p class="tour-type__text">
+                                Туры рассчитаны на клиентов, предпочитающих путешествия в коллективе по четко продуманным и 
+                                отработанным маршрутам, которые позволяют увидеть самое интересное при экономии денег и времени. 
+                                Стандартная категория проживания в этих путешествиях: отели или пансионы 2*, 3*, 4* или 5*. 
+                                Начало тура возможно в любой день недели минимум для 2 человек.
+                            </p>
+                        </div>
+
+                        <div class="tour-type__slider tours-slider js-slider" id="tours-slider-1" data-scrollBar="slider-scrollbar">
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-1@1x.webp 1x,
+                                                    img/base/slider-1@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-1@1x.jpg'
+                                        srcset='img/base/slider-1@1x.jpg 1x,
+                                                img/base/slider-1@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$1299</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Городской тур</div>
+                                    <h3 class="tours-slide__title">Лучшее узбекистана</h3>
+                                    <div class="tours-slide__time">10 дней / 9 ночей</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-2@1x.webp 1x,
+                                                    img/base/slider-2@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-2@1x.jpg'
+                                        srcset='img/base/slider-2@1x.jpg 1x,
+                                                img/base/slider-2@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$999</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Короткий тур</div>
+                                    <h3 class="tours-slide__title">Романтика Ташкента</h3>
+                                    <div class="tours-slide__time">3 дня / 2 ночи</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-3@1x.webp 1x,
+                                                    img/base/slider-3@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-3@1x.jpg'
+                                        srcset='img/base/slider-3@1x.jpg 1x,
+                                                img/base/slider-3@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$1999</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Городской тур</div>
+                                    <h3 class="tours-slide__title">Тайны старого города</h3>
+                                    <div class="tours-slide__time">7 дней / 6 ночей</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-12@1x.webp 1x,
+                                                    img/base/slider-12@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-12@1x.jpg'
+                                        srcset='img/base/slider-12@1x.jpg 1x,
+                                                img/base/slider-12@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$999</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Групповой тур</div>
+                                    <h3 class="tours-slide__title">Дарваза Гас Кратер</h3>
+                                    <div class="tours-slide__time">2 дня / 1 ночь</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-1@1x.webp 1x,
+                                                    img/base/slider-1@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-1@1x.jpg'
+                                        srcset='img/base/slider-1@1x.jpg 1x,
+                                                img/base/slider-1@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$1299</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Городской тур</div>
+                                    <h3 class="tours-slide__title">Лучшее узбекистана</h3>
+                                    <div class="tours-slide__time">10 дней / 9 ночей</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-2@1x.webp 1x,
+                                                    img/base/slider-2@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-2@1x.jpg'
+                                        srcset='img/base/slider-2@1x.jpg 1x,
+                                                img/base/slider-2@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$999</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Короткий тур</div>
+                                    <h3 class="tours-slide__title">Романтика Ташкента</h3>
+                                    <div class="tours-slide__time">3 дня / 2 ночи</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+                            
+                            <div class="tours-slider__scrollbar slider-scrollbar"></div>
+                        </div><!-- /.tours-slider -->
+                    </div>
+                </div><!-- /.tour-type -->
+
+                <div class="tour-types__item tour-type">
+                    <div class="tour-type__header page-flex">
+                        <div class="page-flex__left">
+                            <h2 class="tour-type__title">Походные</h2>
+                        </div>
+                        <div class="page-flex__right">
+                            <p class="tour-type__desc">
+                                Пешие туристические походы<br> по живописным местам
+                            </p>
+                            <a href="#" class="button button--opacity tour-type__toggler" title="Туры">
+                                <span>Туры</span>
+                                <svg width="16" height="16">
+                                    <use xlink:href="#icon-arrow-button"></use>
+                                </svg>
+                            </a>
+                        </div>  
+                        
+                        <a href="all-tours.html" class="button button--opacity tour-type__button" title="Все туры">
+                            Все туры
+                            <svg width="16" height="16">
+                                <use xlink:href="#icon-arrow-button"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="tour-type__content page-flex">
+                        <div class="page-flex__left"></div>
+                        <div class="page-flex__right">
+                            <p class="tour-type__text">
+                                Туры рассчитаны на клиентов, предпочитающих путешествия в коллективе по четко продуманным и 
+                                отработанным маршрутам, которые позволяют увидеть самое интересное при экономии денег и времени. 
+                                Стандартная категория проживания в этих путешествиях: отели или пансионы 2*, 3*, 4* или 5*. 
+                                Начало тура возможно в любой день недели минимум для 2 человек.
+                            </p>
+                        </div>
+
+                        <div class="tour-type__slider tours-slider js-slider" id="tours-slider-2" data-scrollBar="slider-scrollbar">
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-1@1x.webp 1x,
+                                                    img/base/slider-1@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-1@1x.jpg'
+                                        srcset='img/base/slider-1@1x.jpg 1x,
+                                                img/base/slider-1@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$1299</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Городской тур</div>
+                                    <h3 class="tours-slide__title">Лучшее узбекистана</h3>
+                                    <div class="tours-slide__time">10 дней / 9 ночей</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-2@1x.webp 1x,
+                                                    img/base/slider-2@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-2@1x.jpg'
+                                        srcset='img/base/slider-2@1x.jpg 1x,
+                                                img/base/slider-2@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$999</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Короткий тур</div>
+                                    <h3 class="tours-slide__title">Романтика Ташкента</h3>
+                                    <div class="tours-slide__time">3 дня / 2 ночи</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-3@1x.webp 1x,
+                                                    img/base/slider-3@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-3@1x.jpg'
+                                        srcset='img/base/slider-3@1x.jpg 1x,
+                                                img/base/slider-3@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$1999</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Городской тур</div>
+                                    <h3 class="tours-slide__title">Тайны старого города</h3>
+                                    <div class="tours-slide__time">7 дней / 6 ночей</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-12@1x.webp 1x,
+                                                    img/base/slider-12@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-12@1x.jpg'
+                                        srcset='img/base/slider-12@1x.jpg 1x,
+                                                img/base/slider-12@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$999</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Групповой тур</div>
+                                    <h3 class="tours-slide__title">Дарваза Гас Кратер</h3>
+                                    <div class="tours-slide__time">2 дня / 1 ночь</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-1@1x.webp 1x,
+                                                    img/base/slider-1@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-1@1x.jpg'
+                                        srcset='img/base/slider-1@1x.jpg 1x,
+                                                img/base/slider-1@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$1299</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Городской тур</div>
+                                    <h3 class="tours-slide__title">Лучшее узбекистана</h3>
+                                    <div class="tours-slide__time">10 дней / 9 ночей</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-2@1x.webp 1x,
+                                                    img/base/slider-2@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-2@1x.jpg'
+                                        srcset='img/base/slider-2@1x.jpg 1x,
+                                                img/base/slider-2@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$999</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Короткий тур</div>
+                                    <h3 class="tours-slide__title">Романтика Ташкента</h3>
+                                    <div class="tours-slide__time">3 дня / 2 ночи</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+                            
+                            <div class="tours-slider__scrollbar slider-scrollbar"></div>
+                        </div><!-- /.tours-slider -->
+                    </div>
+                </div><!-- /.tour-type -->
+
+                <div class="tour-types__item tour-type">
+                    <div class="tour-type__header page-flex">
+                        <div class="page-flex__left">
+                            <h2 class="tour-type__title">Короткие</h2>
+                        </div>
+                        <div class="page-flex__right">
+                            <p class="tour-type__desc">
+                                Форматы туров по интересам, рассчитанные на 1-2 дня
+                            </p>
+                            <a href="#" class="button button--opacity tour-type__toggler" title="Туры">
+                                <span>Туры</span>
+                                <svg width="16" height="16">
+                                    <use xlink:href="#icon-arrow-button"></use>
+                                </svg>
+                            </a>
+                        </div>  
+                        
+                        <a href="all-tours.html" class="button button--opacity tour-type__button" title="Все туры">
+                            Все туры
+                            <svg width="16" height="16">
+                                <use xlink:href="#icon-arrow-button"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="tour-type__content page-flex">
+                        <div class="page-flex__left"></div>
+                        <div class="page-flex__right">
+                            <p class="tour-type__text">
+                                Туры рассчитаны на клиентов, предпочитающих путешествия в коллективе по четко продуманным и 
+                                отработанным маршрутам, которые позволяют увидеть самое интересное при экономии денег и времени. 
+                                Стандартная категория проживания в этих путешествиях: отели или пансионы 2*, 3*, 4* или 5*. 
+                                Начало тура возможно в любой день недели минимум для 2 человек.
+                            </p>
+                        </div>
+
+                        <div class="tour-type__slider tours-slider js-slider" id="tours-slider-3" data-scrollBar="slider-scrollbar">
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-1@1x.webp 1x,
+                                                    img/base/slider-1@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-1@1x.jpg'
+                                        srcset='img/base/slider-1@1x.jpg 1x,
+                                                img/base/slider-1@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$1299</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Городской тур</div>
+                                    <h3 class="tours-slide__title">Лучшее узбекистана</h3>
+                                    <div class="tours-slide__time">10 дней / 9 ночей</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-2@1x.webp 1x,
+                                                    img/base/slider-2@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-2@1x.jpg'
+                                        srcset='img/base/slider-2@1x.jpg 1x,
+                                                img/base/slider-2@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$999</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Короткий тур</div>
+                                    <h3 class="tours-slide__title">Романтика Ташкента</h3>
+                                    <div class="tours-slide__time">3 дня / 2 ночи</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-3@1x.webp 1x,
+                                                    img/base/slider-3@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-3@1x.jpg'
+                                        srcset='img/base/slider-3@1x.jpg 1x,
+                                                img/base/slider-3@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$1999</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Городской тур</div>
+                                    <h3 class="tours-slide__title">Тайны старого города</h3>
+                                    <div class="tours-slide__time">7 дней / 6 ночей</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-12@1x.webp 1x,
+                                                    img/base/slider-12@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-12@1x.jpg'
+                                        srcset='img/base/slider-12@1x.jpg 1x,
+                                                img/base/slider-12@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$999</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Групповой тур</div>
+                                    <h3 class="tours-slide__title">Дарваза Гас Кратер</h3>
+                                    <div class="tours-slide__time">2 дня / 1 ночь</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-1@1x.webp 1x,
+                                                    img/base/slider-1@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-1@1x.jpg'
+                                        srcset='img/base/slider-1@1x.jpg 1x,
+                                                img/base/slider-1@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$1299</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Городской тур</div>
+                                    <h3 class="tours-slide__title">Лучшее узбекистана</h3>
+                                    <div class="tours-slide__time">10 дней / 9 ночей</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-2@1x.webp 1x,
+                                                    img/base/slider-2@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-2@1x.jpg'
+                                        srcset='img/base/slider-2@1x.jpg 1x,
+                                                img/base/slider-2@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$999</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Короткий тур</div>
+                                    <h3 class="tours-slide__title">Романтика Ташкента</h3>
+                                    <div class="tours-slide__time">3 дня / 2 ночи</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+                            
+                            <div class="tours-slider__scrollbar slider-scrollbar"></div>
+                        </div><!-- /.tours-slider -->
+                    </div>
+                </div><!-- /.tour-type -->
+
+                <div class="tour-types__item tour-type">
+                    <div class="tour-type__header page-flex">
+                        <div class="page-flex__left">
+                            <h2 class="tour-type__title">Групповые</h2>
+                        </div>
+                        <div class="page-flex__right">
+                            <p class="tour-type__desc">
+                                Туры по групповым заявкам,<br> рассчитаны на 6-7 человек
+                            </p>
+                            <a href="#" class="button button--opacity tour-type__toggler" title="Туры">
+                                <span>Туры</span>
+                                <svg width="16" height="16">
+                                    <use xlink:href="#icon-arrow-button"></use>
+                                </svg>
+                            </a>
+                        </div>  
+                        
+                        <a href="all-tours.html" class="button button--opacity tour-type__button" title="Все туры">
+                            Все туры
+                            <svg width="16" height="16">
+                                <use xlink:href="#icon-arrow-button"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="tour-type__content page-flex">
+                        <div class="page-flex__left"></div>
+                        <div class="page-flex__right">
+                            <p class="tour-type__text">
+                                Туры рассчитаны на клиентов, предпочитающих путешествия в коллективе по четко продуманным и 
+                                отработанным маршрутам, которые позволяют увидеть самое интересное при экономии денег и времени. 
+                                Стандартная категория проживания в этих путешествиях: отели или пансионы 2*, 3*, 4* или 5*. 
+                                Начало тура возможно в любой день недели минимум для 2 человек.
+                            </p>
+                        </div>
+
+                        <div class="tour-type__slider tours-slider js-slider" id="tours-slider-4" data-scrollBar="slider-scrollbar">
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-1@1x.webp 1x,
+                                                    img/base/slider-1@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-1@1x.jpg'
+                                        srcset='img/base/slider-1@1x.jpg 1x,
+                                                img/base/slider-1@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$1299</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Городской тур</div>
+                                    <h3 class="tours-slide__title">Лучшее узбекистана</h3>
+                                    <div class="tours-slide__time">10 дней / 9 ночей</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-2@1x.webp 1x,
+                                                    img/base/slider-2@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-2@1x.jpg'
+                                        srcset='img/base/slider-2@1x.jpg 1x,
+                                                img/base/slider-2@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$999</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Короткий тур</div>
+                                    <h3 class="tours-slide__title">Романтика Ташкента</h3>
+                                    <div class="tours-slide__time">3 дня / 2 ночи</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-3@1x.webp 1x,
+                                                    img/base/slider-3@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-3@1x.jpg'
+                                        srcset='img/base/slider-3@1x.jpg 1x,
+                                                img/base/slider-3@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$1999</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Городской тур</div>
+                                    <h3 class="tours-slide__title">Тайны старого города</h3>
+                                    <div class="tours-slide__time">7 дней / 6 ночей</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-12@1x.webp 1x,
+                                                    img/base/slider-12@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-12@1x.jpg'
+                                        srcset='img/base/slider-12@1x.jpg 1x,
+                                                img/base/slider-12@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$999</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Групповой тур</div>
+                                    <h3 class="tours-slide__title">Дарваза Гас Кратер</h3>
+                                    <div class="tours-slide__time">2 дня / 1 ночь</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-1@1x.webp 1x,
+                                                    img/base/slider-1@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-1@1x.jpg'
+                                        srcset='img/base/slider-1@1x.jpg 1x,
+                                                img/base/slider-1@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$1299</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Городской тур</div>
+                                    <h3 class="tours-slide__title">Лучшее узбекистана</h3>
+                                    <div class="tours-slide__time">10 дней / 9 ночей</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-2@1x.webp 1x,
+                                                    img/base/slider-2@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-2@1x.jpg'
+                                        srcset='img/base/slider-2@1x.jpg 1x,
+                                                img/base/slider-2@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$999</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Короткий тур</div>
+                                    <h3 class="tours-slide__title">Романтика Ташкента</h3>
+                                    <div class="tours-slide__time">3 дня / 2 ночи</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+                            
+                            <div class="tours-slider__scrollbar slider-scrollbar"></div>
+                        </div><!-- /.tours-slider -->
+                    </div>
+                </div><!-- /.tour-type -->
+
+                <div class="tour-types__item tour-type">
+                    <div class="tour-type__header page-flex">
+                        <div class="page-flex__left">
+                            <h2 class="tour-type__title">Персональные</h2>
+                        </div>
+                        <div class="page-flex__right">
+                            <p class="tour-type__desc">
+                                Туры с учётом ваших пожеланий,<br> от одного человека
+                            </p>
+                            <a href="#" class="button button--opacity tour-type__toggler" title="Туры">
+                                <span>Туры</span>
+                                <svg width="16" height="16">
+                                    <use xlink:href="#icon-arrow-button"></use>
+                                </svg>
+                            </a>
+                        </div>  
+                        
+                        <a href="all-tours.html" class="button button--opacity tour-type__button" title="Все туры">
+                            Все туры
+                            <svg width="16" height="16">
+                                <use xlink:href="#icon-arrow-button"></use>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="tour-type__content page-flex">
+                        <div class="page-flex__left"></div>
+                        <div class="page-flex__right">
+                            <p class="tour-type__text">
+                                Туры рассчитаны на клиентов, предпочитающих путешествия в коллективе по четко продуманным и 
+                                отработанным маршрутам, которые позволяют увидеть самое интересное при экономии денег и времени. 
+                                Стандартная категория проживания в этих путешествиях: отели или пансионы 2*, 3*, 4* или 5*. 
+                                Начало тура возможно в любой день недели минимум для 2 человек.
+                            </p>
+                        </div>
+
+                        <div class="tour-type__slider tours-slider js-slider" id="tours-slider-5" data-scrollBar="slider-scrollbar">
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-1@1x.webp 1x,
+                                                    img/base/slider-1@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-1@1x.jpg'
+                                        srcset='img/base/slider-1@1x.jpg 1x,
+                                                img/base/slider-1@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$1299</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Городской тур</div>
+                                    <h3 class="tours-slide__title">Лучшее узбекистана</h3>
+                                    <div class="tours-slide__time">10 дней / 9 ночей</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-2@1x.webp 1x,
+                                                    img/base/slider-2@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-2@1x.jpg'
+                                        srcset='img/base/slider-2@1x.jpg 1x,
+                                                img/base/slider-2@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$999</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Короткий тур</div>
+                                    <h3 class="tours-slide__title">Романтика Ташкента</h3>
+                                    <div class="tours-slide__time">3 дня / 2 ночи</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-3@1x.webp 1x,
+                                                    img/base/slider-3@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-3@1x.jpg'
+                                        srcset='img/base/slider-3@1x.jpg 1x,
+                                                img/base/slider-3@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$1999</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Городской тур</div>
+                                    <h3 class="tours-slide__title">Тайны старого города</h3>
+                                    <div class="tours-slide__time">7 дней / 6 ночей</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-12@1x.webp 1x,
+                                                    img/base/slider-12@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-12@1x.jpg'
+                                        srcset='img/base/slider-12@1x.jpg 1x,
+                                                img/base/slider-12@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$999</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Групповой тур</div>
+                                    <h3 class="tours-slide__title">Дарваза Гас Кратер</h3>
+                                    <div class="tours-slide__time">2 дня / 1 ночь</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-1@1x.webp 1x,
+                                                    img/base/slider-1@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-1@1x.jpg'
+                                        srcset='img/base/slider-1@1x.jpg 1x,
+                                                img/base/slider-1@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$1299</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Городской тур</div>
+                                    <h3 class="tours-slide__title">Лучшее узбекистана</h3>
+                                    <div class="tours-slide__time">10 дней / 9 ночей</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="#" class="swiper-slide tours-slider__slide tours-slide">
+                                <picture class='tours-slide__bg'>
+                                    <source srcset='img/base/slider-2@1x.webp 1x,
+                                                    img/base/slider-2@2x.webp 2x'
+                                        type='image/webp'>
+                                    <img src='img/base/slider-2@1x.jpg'
+                                        srcset='img/base/slider-2@1x.jpg 1x,
+                                                img/base/slider-2@2x.jpg 2x'
+                                        width='287'
+                                        height='448'
+                                        alt='Adras Travel'
+                                        title='Adras Travel'>
+                                </picture>
+                                <div class="tours-slide__price">$999</div>
+                                <div class="tours-slide__content">
+                                    <div class="tours-slide__type">Короткий тур</div>
+                                    <h3 class="tours-slide__title">Романтика Ташкента</h3>
+                                    <div class="tours-slide__time">3 дня / 2 ночи</div>
+                                </div>
+                                <div class="tours-slide__arrow">
+                                    <svg width='30' height='30'>
+                                        <use xlink:href='#icon-arrow-link'></use>
+                                    </svg>
+                                </div>
+                            </a>
+                            
+                            <div class="tours-slider__scrollbar slider-scrollbar"></div>
+                        </div><!-- /.tours-slider -->
+                    </div>
+                </div><!-- /.tour-type -->
+            </div><!-- /.tour-types -->
+
+            <div class="text-block page-flex">
+                <div class="page-flex__left">
+                    <h2 class="text-block__title">Туризм в Узбекистане</h2>
+                </div>
+                <div class="page-flex__right">
+                    <div class="text-block__text">
+                        <p>
+                            Узбекистан — это страна, которая, сформировалась под влиянием различных культур, но 
+                            также имеет влияние Советского прошлого.  Что это значит для посетителей этой 
+                            увлекательной страны? Мы будем рады поделиться с вами нашими знаниями. Ниже вы найдете 
+                            не только информацию о визовых требованиях, но и много информации о географии, истории, 
+                            культуре, традициях и известных личностях Узбекистана. Посетите также наш раздел, где 
+                            вы найдете ответы на вопросы об Узбекистане. 
+                        </p>
+
+                        <a href="#" class="button button--opacity button--big">
+                            Читать о стране
+                            <svg width="16" height="16">
+                                <use xlink:href="#icon-arrow-button"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- / .section -->
+
+    <section class="section section--bg--gray">
+        <div class="section__flex">
+            <div class="section__block section__block--dark">
+                <picture class='section__bg'>
+                    <source srcset='img/base/build-4@1x.webp 1x,
+                                    img/base/build-4@2x.webp 2x'
+                        type='image/webp'>
+                    <img src='img/base/build-4@1x.jpg'
+                        srcset='img/base/build-4@1x.jpg 1x,
+                                img/base/build-4@2x.jpg 2x'
+                        width='960'
+                        height='1080'
+                        alt='Adras Travel'
+                        title='Adras Travel'>
+                </picture>
+
+                <div class="section__container">
+                    <h2 class="section__title">
+                        Бронирование туров<br> по Узбекистану
+                    </h2>
+                    <p class="section__text">
+                        Свяжитесь с нами уже сегодня: отправьте нам сообщение по электронной почте или воспользуйтесь 
+                        нашей контактной формой. В том случае, если вы не нашли подходящее путешествие, сообщите нам 
+                        свою идею о туре в Узбекистан. Мы с удовольствием составим ваше путешествие с учетом пожеланий.
+                    </p>
+                </div>
+            </div>
+
+            <div class="section__block">
+                <%=_.template(require('../parts/contacts-form.html'))() %>
+            </div>
+        </div>
+    </section><!-- / .section -->
+
+    <%=_.template(require('../parts/advantages.html'))() %>
+</main><!-- / .site-main -->
+
+<%=_.template(require('../parts/main-form.html'))({
+    isGray: false
+}) %>
+
+<%=_.template(require('../parts/main-footer.html'))() %>

@@ -1,0 +1,345 @@
+<%=_.template(require('../parts/main-header.html'))({
+    title: "Текстовый шаблон | Adras Travel",
+    isWhite: true,
+    menu: {blog: "current-menu-item"}
+}) %>
+
+<main class="site-main">
+    <section class="page-header">
+        <div class="container page-flex">
+            <div class="page-flex__left">
+                <div class="breadcrumbs">
+                    <span><a href="#">Путь</a></span>
+                    <span>/</span>
+                    <span><a href="#">Путь</a></span>
+                    <span>/</span>
+                    <span>Путь</span>
+                </div>
+                <h1 class="page-header__title">Текстовый шаблон</h1>
+            </div>
+            <div class="page-flex__right">
+                <p class="page-header__text">
+                    Лид-пояснение перед началом раздела: вводный текст, способствующий пониманию, о какой теме 
+                    пойдёт речь ниже. Минимальное количество строк — 4, но не более 5 строк. Так шапка будет 
+                    выглядеть наиболее устойчиво в композиции и не перегружать экран.
+                </p>
+            </div>
+        </div>
+    </section><!-- /.page-header -->
+
+    <section class="section section--sticky">
+        <div class="container container--wide">
+            <div class="page-flex">
+                <div class="page-flex__aside page-aside">
+                    <ul class="page-aside__blog">
+                        <li class="current-menu-item">
+                            <a href="#" class="page-aside__link">
+                                <h5>Тема 1</h5>
+                                <svg width='18' height='18'>
+                                    <use xlink:href='#icon-plus'></use>
+                                </svg>
+                            </a>
+                            <ul class="page-aside__sublist">
+                                <li class="current-menu-item">
+                                    <a href="#">Навигация 1</a>
+                                </li>
+                                <li><a href="#">Навигация 2</a></li>
+                                <li><a href="#">Навигация 3</a></li>
+                                <li><a href="#">Навигация 4</a></li>
+                                <li><a href="#">Навигация 5</a></li>
+                                <li><a href="#">Навигация 6</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="page-aside__link">
+                                <h5>Тема 2</h5>
+                                <svg width='18' height='18'>
+                                    <use xlink:href='#icon-plus'></use>
+                                </svg>
+                            </a>
+                            <ul class="page-aside__sublist">
+                                <li><a href="#">Навигация 1</a></li>
+                                <li><a href="#">Навигация 2</a></li>
+                                <li><a href="#">Навигация 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="page-aside__link">
+                                <h5>Тема 3</h5>
+                                <svg width='18' height='18'>
+                                    <use xlink:href='#icon-plus'></use>
+                                </svg>
+                            </a>
+                            <ul class="page-aside__sublist">
+                                <li><a href="#">Навигация 1</a></li>
+                                <li><a href="#">Навигация 2</a></li>
+                                <li><a href="#">Навигация 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="page-aside__link">
+                                <h5>Тема 4</h5>
+                                <svg width='18' height='18'>
+                                    <use xlink:href='#icon-plus'></use>
+                                </svg>
+                            </a>
+                            <ul class="page-aside__sublist">
+                                <li><a href="#">Навигация 1</a></li>
+                                <li><a href="#">Навигация 2</a></li>
+                                <li><a href="#">Навигация 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="page-aside__link">
+                                <h5>Тема 5</h5>
+                                <svg width='18' height='18'>
+                                    <use xlink:href='#icon-plus'></use>
+                                </svg>
+                            </a>
+                            <ul class="page-aside__sublist">
+                                <li><a href="#">Навигация 1</a></li>
+                                <li><a href="#">Навигация 2</a></li>
+                                <li><a href="#">Навигация 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="page-aside__link">
+                                <h5>Тема 6</h5>
+                                <svg width='18' height='18'>
+                                    <use xlink:href='#icon-plus'></use>
+                                </svg>
+                            </a>
+                            <ul class="page-aside__sublist">
+                                <li><a href="#">Навигация 1</a></li>
+                                <li><a href="#">Навигация 2</a></li>
+                                <li><a href="#">Навигация 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="page-aside__mobile">
+                        <span>Развернуть</span>
+                        <span>Свернуть</span>
+                    </div>
+                </div><!-- /.page-flex__aside -->
+
+                <div class="page-flex__main page-main">
+                    <div class="page-main__block">
+                        <div class="page-main__left">
+                            <h2 class="page-main__title">Подзаголовок<br> для текста</h2>
+                            <div class="page-main__info">
+                                <p>
+                                    Блок уточняющего текста с дополнительной информацией по теме. Мржно использовать 
+                                    <a href="#">ссылку</a> на смежную статью. Максимальное количество ссылок в уточняющем 
+                                    тексте — 2. Сверх 3-х ссылок не допускается по причине излишнего привлечения внимания 
+                                    (яркий зелёный цвет в ссылках обращает на себя внимание.
+                                </p>
+                                <p>
+                                    Использование данного блока необязательно.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="page-main__right">
+                            <div class="page-main__text">
+                                <p>
+                                    Начало текста или лид перед началом крупной статьи. При большом объёме текста в данном 
+                                    блоке возможно использование блока уточняющего текста слева ниже подзаголовка. Если этот 
+                                    блок ограничен 3-4 строками, то возможно использование пространства без блока слева.
+                                </p>
+                                <p>
+                                    Начало текста или лид перед началом крупной статьи. При большом объёме текста в данном 
+                                    блоке возможно использование блока уточняющего текста слева ниже подзаголовка. Если этот 
+                                    блок ограничен 3-4 строками, то возможно использование пространства без блока слева.
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- /.page-main__block -->
+
+                    <picture class='page-main__img'>
+                        <source srcset='img/base/textpage-img@1x.webp 1x,
+                                        img/base/textpage-img@2x.webp 2x'
+                            type='image/webp'>
+                        <img src='img/base/textpage-img@1x.jpg'
+                            srcset='img/base/textpage-img@1x.jpg 1x,
+                                    img/base/textpage-img@2x.jpg 2x'
+                            width='1049'
+                            height='510'
+                            alt='Adras Travel'
+                            title='Adras Travel'>
+                    </picture>
+                    
+                    <div class="page-main__block">
+                        <div class="page-main__left">
+                            <picture class='page-main__img'>
+                                <source srcset='img/base/blog-map@1x.webp 1x,
+                                                img/base/blog-map@2x.webp 2x'
+                                    type='image/webp'>
+                                <img src='img/base/blog-map@1x.jpg'
+                                    srcset='img/base/blog-map@1x.jpg 1x,
+                                            img/base/blog-map@2x.jpg 2x'
+                                    width='342'
+                                    height='224'
+                                    alt='Adras Travel'
+                                    title='Adras Travel'>
+                            </picture>
+                        </div>
+                        <div class="page-main__right">
+                            <div class="page-main__text">
+                                <p>
+                                    Две трети территории страны составляют пустыни (пустыня Кызылкум и Каракум), степи 
+                                    («Голодная степь») и горы (Гиссарский хребет Тянь-Шанских гор). Города Узбекистана, 
+                                    вокруг которых сосредоточена жизнь, находятся в долинах двух крупных рек — Амударьи и Сырдарьи.
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- /.page-main__block -->
+
+                    <div class="page-main__block">
+                        <div class="blog-info">
+                            <div class="blog-info__item">
+                                <div class="blog-info__header">
+                                    <div class="blog-info__title">
+                                        <span>Факт</span>
+                                    </div>
+                                </div>
+                                <div class="blog-info__text">короткая подпись</div>
+                            </div>
+                            <div class="blog-info__item">
+                                <div class="blog-info__header">
+                                    <div class="blog-info__title">
+                                        Очень длинный факт<br> в две строки
+                                    </div>
+                                </div>
+                                <div class="blog-info__text">короткая подпись</div>
+                            </div>
+                            <div class="blog-info__item">
+                                <div class="blog-info__header">
+                                    <div class="blog-info__title">
+                                        <span>XXXXX</span> км<sup>2</sup>
+                                    </div>
+                                </div>
+                                <div class="blog-info__text">короткая подпись</div>
+                            </div>
+                        </div>
+                    </div><!-- /.page-main__block -->
+
+                    <picture class='page-main__img'>
+                        <source srcset='img/base/textpage-img@1x.webp 1x,
+                                        img/base/textpage-img@2x.webp 2x'
+                            type='image/webp'>
+                        <img src='img/base/textpage-img@1x.jpg'
+                            srcset='img/base/textpage-img@1x.jpg 1x,
+                                    img/base/textpage-img@2x.jpg 2x'
+                            width='1049'
+                            height='510'
+                            alt='Adras Travel'
+                            title='Adras Travel'>
+                    </picture>
+
+                    <div class="page-main__block">
+                        <div class="page-main__left">
+                        </div>
+                        <div class="page-main__right">
+                            <div class="page-main__text">
+                                <p>
+                                    Узбекистан имеет четыре анклава, отделённых от основной территории (все находятся в 
+                                    Ферганской долине, окружены территорией Кыргызстана). На территории Узбекистана 
+                                    находятся анклавы Таджикистана (Сарвак) и Кыргызстана (Барак).
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- /.page-main__block -->
+
+                    <div class="page-main__block">
+                        <div class="blog-info">
+                            <div class="blog-info__item">
+                                <div class="blog-info__header">
+                                    <div class="blog-info__title">
+                                        <span>XXX</span> м<br> в две строки
+                                    </div>
+                                </div>
+                                <div class="blog-info__text">короткая подпись</div>
+                            </div>
+                            <div class="blog-info__item">
+                                <div class="blog-info__header">
+                                    <div class="blog-info__title">
+                                        <span>XX</span> м<br> в две строки
+                                    </div>
+                                </div>
+                                <div class="blog-info__text">короткая подпись</div>
+                            </div>
+                            <div class="blog-info__item">
+                                <div class="blog-info__header">
+                                    <div class="blog-info__title">
+                                        <span>XX</span><br> человек
+                                    </div>
+                                </div>
+                                <div class="blog-info__text">короткая подпись</div>
+                            </div>
+                        </div>
+                    </div><!-- /.page-main__block -->
+
+                    <div class="page-main__block page-main__block--border">
+                        <div class="page-main__left">
+                            <h2 class="page-main__title">Подзаголовок<br> для текста</h2>
+                        </div>
+                        <div class="page-main__right">
+                            <div class="page-main__text">
+                                <p>
+                                    Узбекистан имеет четыре анклава, отделённых от основной территории (все находятся в 
+                                    Ферганской долине, окружены территорией Кыргызстана). На территории Узбекистана 
+                                    находятся анклавы Таджикистана (Сарвак) и Кыргызстана (Барак).
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- /.page-main__block -->
+
+                    <picture class='page-main__img'>
+                        <source srcset='img/base/textpage-img@1x.webp 1x,
+                                        img/base/textpage-img@2x.webp 2x'
+                            type='image/webp'>
+                        <img src='img/base/textpage-img@1x.jpg'
+                            srcset='img/base/textpage-img@1x.jpg 1x,
+                                    img/base/textpage-img@2x.jpg 2x'
+                            width='1049'
+                            height='510'
+                            alt='Adras Travel'
+                            title='Adras Travel'>
+                    </picture>
+
+                    <div class="page-main__block">
+                        <div class="page-main__left">
+                            <div class="page-main__info">
+                                <p>
+                                    Блок уточняющего текста с дополнительной информацией по теме. Мржно использовать 
+                                    <a href="#">ссылку</a> на смежную статью. Максимальное количество ссылок в уточняющем 
+                                    тексте — 2. Сверх 3-х ссылок не допускается по причине излишнего привлечения внимания 
+                                    (яркий зелёный цвет в ссылках обращает на себя внимание.
+                                </p>
+                                <p>
+                                    Использование данного блока необязательно.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="page-main__right">
+                            <div class="page-main__text">
+                                <p>
+                                    31 августа 1991 — дата установления независмости Республики от СССР. Форма правления в 
+                                    стране — Президентская Республика. На 2020 год Президентом Узбекистана является Мирзиёев 
+                                    Шавкат Миромонович. В стране действует двухпалатный парламент. Нижняя палата (Олий Мажлис) 
+                                    и Верхний парламент (Сенат).
+                                </p>
+                            </div>
+                        </div>
+                    </div><!-- /.page-main__block -->
+                </div><!-- /.page-flex__main -->
+            </div>
+        </div>
+    </section><!-- / .section -->
+</main><!-- / .site-main -->
+
+<%=_.template(require('../parts/main-form.html'))({
+    isGray: true
+}) %>
+
+<%=_.template(require('../parts/main-footer.html'))() %>
